@@ -77,6 +77,8 @@ relation decisions. Unrelated evidence cannot satisfy the distinct-locator rule.
   external dynamic reference. Unresolvable local references also failed with
   explicit input errors.
 
-The implementation branch started from `0f59ebb`. Tests and fixtures travel with
-the implementation commit; Git history identifies the exact code revision. The
+The implementation branch started from `0f59ebb`; the reviewed implementation
+commit is `b81eaa0`. Tests and fixtures travel with that commit.
+[Draft pull request 1](https://github.com/YalcinkayaE/lit_pattern/pull/1) records
+the publication and keeps integration into `main` pending. The
 checks above are local conformance evidence, not hosted CI or pilot results.

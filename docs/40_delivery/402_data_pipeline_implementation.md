@@ -102,7 +102,7 @@ register, use cases, changelog, and existing atlas evidence/generated outputs.
 - [x] Replace stale implementation claims with observed behaviour and commands.
 - [x] Document JSON format, extraction review items, versions and error codes.
 - [x] Refresh the atlas after reviewing changed cited sources.
-- [ ] Run full checks, independent review, fix material findings, commit and push
+- [x] Run full checks, independent review, fix material findings, commit and push
   the implementation branch for review.
 
 ## Execution record
@@ -122,3 +122,7 @@ coverage, linked-locator separation, finite-number parsing, timezone offsets,
 and dynamic schema references. Regression cases failed before the fixes; the
 full 19-test-method suite then passed. The reviewer independently replayed and
 confirmed all five fixes. No reviewed finding is being deferred.
+
+Implementation committed as `b81eaa0` and published on `codex/data-pipeline`.
+[Draft pull request 1](https://github.com/YalcinkayaE/lit_pattern/pull/1)
+contains the reviewed implementation; integration into `main` remains pending.
