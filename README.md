@@ -4,6 +4,9 @@ This repository holds a proposed pattern vocabulary and coding manual for
 literary and audiovisual analysis. It is documentation-first. The current
 definitions have not been validated on a labelled corpus.
 
+The repository is intended for public distribution. Its software is MIT licensed
+and its original taxonomy and documentation content are CC BY 4.0 licensed.
+
 The current source vocabulary is
 [`literary_and_video_patterns.csv`](literary_and_video_patterns.csv). It contains
 59 proposed patterns across genre, narrative structure, rhetorical devices,
@@ -68,7 +71,7 @@ These checks establish file consistency. They do not validate the taxonomy.
 
 ## Immediate next work
 
-1. Confirm ownership and licensing.
+1. Configure the public Git remote and publish the initial repository.
 2. Normalise the source CSV into separate patterns, indicators, examples,
    relations, mappings, and evidence-rule tables.
 3. Add a schema, validator, and conformance tests.

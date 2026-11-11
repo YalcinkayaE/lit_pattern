@@ -9,6 +9,7 @@ editorial changes.
 ### Added
 
 - Initial repository contract and documentation set.
+- Confirmed public-release status and the MIT and CC BY 4.0 licence split.
 - Product overview, use cases, and scope limits.
 - Codebook generator and generated codebook for the 59-row source CSV.
 - Proposed normalised data model and annotation workflow.
@@ -33,5 +34,6 @@ editorial changes.
 - No real exemplar, hard negative, or borderline case has been adjudicated.
 - No pilot has been run.
 - No pattern has been validated.
-- Repository ownership and public-release status remain unresolved.
+- Repository owner contact metadata remains unresolved.
+- No public Git remote has been configured or pushed.
 

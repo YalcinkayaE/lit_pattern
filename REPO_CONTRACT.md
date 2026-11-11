@@ -28,6 +28,13 @@ source pattern CSV is present. The normalised schema, validation tooling, pilot
 corpus, annotations, inter-annotator results, and validated pattern statuses do
 not yet exist in this repository.
 
+Distribution status: public release confirmed by the repository owner on
+2026-11-11. The software, taxonomy, documentation, corpus, and privacy boundaries
+described in this contract still apply.
+
+Licence status: confirmed on 2026-11-11. Software uses the MIT licence. Original
+taxonomy and documentation content use CC BY 4.0, as stated in `LICENSE`.
+
 ## Current scope
 
 - Preserve and describe the owner-supplied `literary_and_video_patterns.csv`.
@@ -108,7 +115,9 @@ records.
 
 ## Open items
 
-- Resolve repository ownership and confirm the licence before public release.
+- Record the repository owner's public contact identity. The licence and public
+  distribution decision are confirmed, but the owner metadata value remains
+  unresolved in controlled-document headers.
 - Decide whether the operational source of truth will be normalised CSV, SQLite,
   or both.
 - Extract indicators, typed relations, workbook mappings, examples, and
@@ -148,4 +157,6 @@ records.
 - Do not infer pattern absence from an uninspected segment.
 - Do not use AI-generated prose as a substitute for located exemplars or
   independent coding evidence.
+- Keep public-release changes consistent with the confirmed MIT and CC BY 4.0
+  licence split.
 

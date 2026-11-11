@@ -1,4 +1,4 @@
-This repository uses two licences according to artefact type.
+This repository uses two confirmed licences according to artefact type.
 
 Software
 ========
@@ -45,7 +45,7 @@ The authoritative licence text is available at:
 https://creativecommons.org/licenses/by/4.0/legalcode
 
 Attribution should identify "lit_pattern", the source file or document, and the
-pattern or schema version used. If the repository owner later selects a
-different licence, that decision must be recorded in `REPO_CONTRACT.md` and
-`CHANGELOG.md`.
+pattern or schema version used. The repository owner confirmed this licence
+split for public distribution on 2026-11-11. Any later licensing change must be
+recorded in `REPO_CONTRACT.md` and `CHANGELOG.md`.
 

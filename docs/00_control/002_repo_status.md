@@ -27,6 +27,8 @@ not evidence that the proposed functionality exists.
 - The CSV has 59 data rows and 18 columns.
 - All 59 `pattern_id` values are non-empty and unique.
 - Every row has status `Proposed; not yet validated on a labelled corpus`.
+- Public distribution and the MIT and CC BY 4.0 licence split were confirmed by
+  the repository owner on 2026-11-11.
 - The source SHA-256 is
   `a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d`.
 - Four source fields are identical across all 59 rows: `evidence_required`,
@@ -62,7 +64,11 @@ not evidence that the proposed functionality exists.
 
 ## Required next action
 
-Confirm repository ownership and licensing, then normalise the source vocabulary
-without changing pattern meaning. After that, add conformance checks and prepare
-the pilot cases.
+Configure the public Git remote and publish the initial repository. Then
+normalise the source vocabulary without changing pattern meaning. After that,
+add conformance checks and prepare the pilot cases.
+
+Repository-owner public contact metadata remains unresolved. It does not block
+publication of the current documentation set, but it should be recorded in the
+controlled-document headers when supplied.
 

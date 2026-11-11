@@ -22,14 +22,28 @@ software or annotation at scale.
 
 ## Phase 0: Control
 
-Status: documented, not completed.
+Status: public distribution and licence choices confirmed; owner metadata
+incomplete.
 
-- Confirm repository owner and public, private, or internal-release intent.
-- Confirm licence choice.
+- Public repository intent confirmed on 2026-11-11.
+- MIT software and CC BY 4.0 content licence split confirmed on 2026-11-11.
+- Repository owner public contact identity remains unresolved.
 - Confirm that the original source CSV remains the current pattern authority.
 - Select the pilot work and video version without committing corpus files.
 
-Exit evidence: resolved ownership and licence records in the repository.
+Exit evidence: public status and licence records are complete. Owner metadata
+still needs a supplied value before the control phase is fully complete.
+
+## Phase 0a: Public publication
+
+Status: ready for remote configuration; not published.
+
+- Configure a public Git remote under the confirmed owner account.
+- Push the initial commit.
+- Verify public visibility and licence rendering after publication.
+
+Exit evidence: a verified public repository URL and observed render of the
+README and licence files.
 
 ## Phase 1: Normalisation
 
