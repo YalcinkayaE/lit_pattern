@@ -1,0 +1,51 @@
+This repository uses two licences according to artefact type.
+
+Software
+========
+
+Source code, scripts, and executable tests are licensed under the MIT License.
+
+Copyright (c) 2026 lit_pattern contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Taxonomy and documentation
+==========================
+
+Original pattern definitions, controlled vocabularies, documentation, and
+annotation guidance in this repository are licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0).
+
+Licence summary:
+
+- You may share and adapt the material for any purpose.
+- You must give appropriate credit, provide a link to the licence, and indicate
+  whether changes were made.
+- The licence does not grant rights to third-party source works, quotations,
+  corpora, trademarks, or material whose ownership is unresolved.
+
+The authoritative licence text is available at:
+
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution should identify "lit_pattern", the source file or document, and the
+pattern or schema version used. If the repository owner later selects a
+different licence, that decision must be recorded in `REPO_CONTRACT.md` and
+`CHANGELOG.md`.
+
