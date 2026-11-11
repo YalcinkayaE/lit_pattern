@@ -45,6 +45,11 @@ not evidence that the proposed functionality exists.
 
 - Repository control and documentation structure.
 - A codebook generator.
+- Deterministic extraction CLI and checked derived tables under `data/normalised/`.
+- An exact copy of the source CSV and hash manifest in the extraction.
+- Proposed annotation JSON Schema 0.1.0 and executable structural/cross-record
+  validator, including absence and five pattern-specific evidence rules.
+- Conformance tests using invented fixtures, separate from any pilot evidence.
 - A generated `CODEBOOK.md`.
 - Proposed data, annotation, boundary, pilot, and validation plans.
 - Evidence-backed repository atlas with a refresh and freshness-check helper.
@@ -52,11 +57,10 @@ not evidence that the proposed functionality exists.
 
 ## Not implemented
 
-- Normalised source tables.
-- SQL DDL.
-- Annotation JSON Schema.
-- Schema conformance tests.
-- Import and export tools.
+- Fully reviewed operational indicators, typed relations, and decomposed mappings.
+- SQL DDL and database persistence.
+- Platform-specific import/export adapters.
+- Persistent append-only status-history enforcement.
 - Annotation-tool integration.
 - Real pilot cases and adjudications.
 - Agreement analysis.
@@ -73,9 +77,9 @@ not evidence that the proposed functionality exists.
 
 ## Required next action
 
-Normalise the source vocabulary without changing pattern meaning. After that,
-implement the annotation contract, add conformance checks, and prepare the pilot
-cases.
+Review the extraction queue without changing pattern meaning, select lawful
+pilot cases, and review the proposed annotation contract against those cases.
+Then perform the independent coding and adjudication described in `PILOT.md`.
 
 Repository-owner public contact metadata remains unresolved. It does not block
 publication of the current documentation set, but it should be recorded in the

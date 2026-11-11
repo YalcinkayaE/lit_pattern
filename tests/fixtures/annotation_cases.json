@@ -1,0 +1,21 @@
+{
+  "fixture_set_version": "0.1.0",
+  "scope": "Invented conformance fixtures only; not corpus annotations or pilot evidence.",
+  "cases": [
+    {
+      "name": "literary",
+      "path": "literary.json",
+      "expected_valid": true
+    },
+    {
+      "name": "video",
+      "path": "video.json",
+      "expected_valid": true
+    },
+    {
+      "name": "knowledge",
+      "path": "knowledge.json",
+      "expected_valid": true
+    }
+  ]
+}

@@ -20,6 +20,16 @@ editorial changes.
 - Repository atlas, agent onboarding guide, and concrete use cases.
 - Public repository at [YalcinkayaE/lit_pattern](https://github.com/YalcinkayaE/lit_pattern).
 
+### Implemented file tooling
+
+- Deterministic source extraction with an exact retained source copy, manifests,
+  candidate tables, and explicit semantic review items.
+- Proposed annotation JSON Schema 0.1.0 and validator for structure, references,
+  absence inspection, ordered evidence, and knowledge-state records.
+- Invented conformance fixtures and failure-path tests.
+- Independent-review fixes for linked evidence, finite timestamps, timezone
+  ranges, and offline dynamic schema references.
+
 ### Verified
 
 - The source CSV parses as CSV, contains the expected 18 columns, and has 59
@@ -33,9 +43,8 @@ editorial changes.
 
 ### Not done
 
-- No normalised dataset has been produced.
-- No SQL schema or JSON Schema has been added.
-- No validator or conformance test has been added.
+- Discrete indicators, typed relations, and mapping rationale still require review.
+- No SQL schema or persistent status-history enforcement has been added.
 - No annotation tool has been selected or integrated.
 - No real exemplar, hard negative, or borderline case has been adjudicated.
 - No pilot has been run.

@@ -12,28 +12,28 @@
   ],
   "identity": [
     {
-      "text": "lit_pattern is a documentation-first repository for a proposed literary and audiovisual pattern vocabulary and coding manual; there is no runtime application yet.",
+      "text": "lit_pattern holds a proposed literary/audiovisual pattern vocabulary, coding materials, and file-based extraction/annotation validation tools. The original CSV remains authoritative; extracted candidates and a schema-conformant record do not establish empirical validity.",
       "sources": [
         {
           "path": "REPO_CONTRACT.md",
-          "anchor": "Purpose: maintain a proposed, evidence-oriented pattern database and coding"
+          "anchor": "Current status: file-based command-line tooling and proposed coding materials."
         },
         {
           "path": "REPO_CONTRACT.md",
-          "anchor": "There is no runtime application yet."
+          "anchor": "`data/normalised/` is a derived extraction, not a replacement authority."
         }
       ]
     },
     {
-      "text": "The source CSV owns current proposed definitions and workbook mappings; CODEBOOK.md is its generated human-readable view. Normalised tables, annotation validation, and empirical pilot results remain open work.",
+      "text": "Python 3.11+ is the declared minimum. The file pipeline uses jsonschema 4.26.0; the existing codebook generator uses the standard library. There is no hosted application, SQL store, annotation platform integration, or pilot dataset.",
       "sources": [
         {
           "path": "REPO_CONTRACT.md",
-          "anchor": "2. `literary_and_video_patterns.csv` for the current proposed pattern labels,"
+          "anchor": "The runtime consists of command-line file tools;"
         },
         {
-          "path": "CONTRIBUTING.md",
-          "anchor": "`CODEBOOK.md` is generated from that file and must not be edited by hand."
+          "path": "requirements.txt",
+          "anchor": "jsonschema==4.26.0"
         },
         {
           "path": "docs/00_control/002_repo_status.md",
@@ -42,20 +42,7 @@
       ]
     },
     {
-      "text": "The implemented codebook generator uses Python standard-library modules. Python 3.11+ and SQLite describe the intended analysis toolchain; dependency versions are not selected.",
-      "sources": [
-        {
-          "path": "scripts/generate_codebook.py",
-          "anchor": "import argparse\nimport csv\nimport hashlib\nimport sys\nfrom pathlib import Path"
-        },
-        {
-          "path": "REPO_CONTRACT.md",
-          "anchor": "The intended analysis toolchain is Python 3.11 or later with SQLite"
-        }
-      ]
-    },
-    {
-      "text": "This atlas is an informative generated navigation aid. The repository contract, source CSV, and registered documents retain their authority order; owner contact metadata is unresolved.",
+      "text": "This atlas is informative generated navigation subordinate to the repository contract and registered documents. The proposed pattern statuses and unresolved owner metadata retain their contract meanings.",
       "sources": [
         {
           "path": "docs/00_control/003_document_register.md",
@@ -63,18 +50,14 @@
         },
         {
           "path": "REPO_CONTRACT.md",
-          "anchor": "## Authoritative sources"
-        },
-        {
-          "path": "REPO_CONTRACT.md",
-          "anchor": "- Record the repository owner's public contact identity."
+          "anchor": "## Vocabulary rules"
         }
       ]
     }
   ],
   "entrypoints": [
     {
-      "text": "Start here for scope, authority, vocabulary, source checksum, verification limits, and update rules.",
+      "text": "Read for authority, source preservation, current tooling, verification limits, and open semantic/pilot work.",
       "sources": [
         {
           "path": "REPO_CONTRACT.md",
@@ -84,306 +67,442 @@
       "name": "REPO_CONTRACT.md"
     },
     {
-      "text": "Current source vocabulary, including criteria, media indicators, related-pattern notation, and source-workbook mappings.",
+      "text": "Current proposed definitions and original workbook mappings; CODEBOOK.md is its generated readable view.",
       "sources": [
         {
           "path": "literary_and_video_patterns.csv",
           "anchor": "pattern_id,label_type,label,definition,inclusion_criteria,exclusion_criteria,analysis_unit"
-        }
-      ],
-      "name": "literary_and_video_patterns.csv"
-    },
-    {
-      "text": "Readable generated coding manual; edit the CSV and regenerate rather than editing this output.",
-      "sources": [
+        },
         {
           "path": "CODEBOOK.md",
           "anchor": "> Generated file. Edit `literary_and_video_patterns.csv`"
         }
       ],
-      "name": "CODEBOOK.md"
+      "name": "Source CSV and codebook"
     },
     {
-      "text": "`python3 scripts/generate_codebook.py --check` compares CODEBOOK.md against rendered source data. Omitting --check writes CODEBOOK.md. These commands are documented and statically traced here, not executed during atlas creation.",
+      "text": "Generate or check the codebook using `python3 scripts/generate_codebook.py` and `--check`.",
       "sources": [
         {
           "path": "scripts/generate_codebook.py",
           "anchor": "def main() -> int:"
-        },
-        {
-          "path": "scripts/generate_codebook.py",
-          "anchor": "if args.check:"
-        },
-        {
-          "path": "scripts/generate_codebook.py",
-          "anchor": "OUTPUT.write_text(rendered, encoding=\"utf-8\")"
         }
       ],
       "name": "Codebook CLI"
     },
     {
-      "text": "Proposed mixed-media validation study and status gates; no corpus, recruited annotators, or agreement result is recorded by this protocol.",
+      "text": "Run `python3 -m lit_pattern.normalise --config config/pipeline.json --output data/normalised`; add --check for exact freshness validation.",
       "sources": [
         {
-          "path": "PILOT.md",
-          "anchor": "This is a planned pilot. No annotator has been recruited"
+          "path": "lit_pattern/normalise.py",
+          "anchor": "def main() -> int:"
+        },
+        {
+          "path": "lit_pattern/normalise.py",
+          "anchor": "def build(config_path: Path)"
+        },
+        {
+          "path": "lit_pattern/normalise.py",
+          "anchor": "def persist("
         }
       ],
-      "name": "PILOT.md"
+      "name": "Normalisation CLI"
+    },
+    {
+      "text": "Run `python3 -m lit_pattern.validate --config config/pipeline.json --catalogue data/normalised --input <bundle.json>` to report structural and cross-record errors.",
+      "sources": [
+        {
+          "path": "lit_pattern/validate.py",
+          "anchor": "def main() -> int:"
+        },
+        {
+          "path": "lit_pattern/validate.py",
+          "anchor": "def validate_bundle("
+        }
+      ],
+      "name": "Annotation validator CLI"
+    },
+    {
+      "text": "Read the executable proposed format, command examples, extraction tables, evidence rules, and limitations.",
+      "sources": [
+        {
+          "path": "docs/30_design/304_annotation_file_contract.md",
+          "anchor": "# Annotation File Contract"
+        }
+      ],
+      "name": "docs/30_design/304_annotation_file_contract.md"
+    },
+    {
+      "text": "Run `python3 -m unittest discover -s tests -v`; fixtures are invented conformance data, not annotations from a pilot.",
+      "sources": [
+        {
+          "path": "README.md",
+          "anchor": ".venv/bin/python -m unittest discover -s tests -v"
+        },
+        {
+          "path": "tests/fixtures/annotation_cases.json",
+          "anchor": "\"scope\": \"Invented conformance fixtures only; not corpus annotations or pilot evidence.\""
+        }
+      ],
+      "name": "Tests and conformance fixtures"
+    },
+    {
+      "name": "Repository test plan",
+      "text": "DOC-504 maps current test assertions, missing boundary cases, execution environments, reporting, and proposed pre-merge/rehearsal/pilot gates. It separates planned coverage from observed results.",
+      "sources": [
+        {
+          "path": "docs/50_verification/503_repository_test_plan.md",
+          "anchor": "# Repository Test Plan"
+        },
+        {
+          "path": "docs/50_verification/503_repository_test_plan.md",
+          "anchor": "## Current implementation test matrix"
+        }
+      ]
     }
   ],
   "modules": [
     {
-      "text": "REPO_CONTRACT.md governs identity and authority. AGENTS.md and CONTRIBUTING.md constrain changes; the document register locates controlled and informative documents. Governance changes require an explicit contract update.",
+      "text": "REPO_CONTRACT governs scope, authority, vocabulary, and status evidence. AGENTS and CONTRIBUTING constrain changes. The document register distinguishes controlled designs, evidence, and informative navigation.",
       "sources": [
         {
           "path": "REPO_CONTRACT.md",
-          "anchor": "1. `REPO_CONTRACT.md` for repository identity, scope, authority, status, and"
+          "anchor": "## Authoritative sources"
         },
         {
           "path": "AGENTS.md",
           "anchor": "- Do not silently change repository identity, scope, source ordering, runtime"
         },
         {
-          "path": "CONTRIBUTING.md",
-          "anchor": "update to `REPO_CONTRACT.md`."
-        },
-        {
           "path": "docs/00_control/003_document_register.md",
           "anchor": "# Document Register"
         }
       ],
-      "name": "Repository control"
+      "name": "Control"
     },
     {
-      "text": "The CSV is the input boundary. scripts/generate_codebook.py owns loading, basic required-field and ID checks, rendering, and drift detection. CODEBOOK.md is the output; generator changes must preserve the source authority.",
+      "text": "The codebook generator loads and structurally checks the source CSV, renders the manual, and either writes it or checks drift. Edit source definitions rather than the generated manual.",
       "sources": [
-        {
-          "path": "scripts/generate_codebook.py",
-          "anchor": "SOURCE = ROOT / \"literary_and_video_patterns.csv\""
-        },
-        {
-          "path": "scripts/generate_codebook.py",
-          "anchor": "OUTPUT = ROOT / \"CODEBOOK.md\""
-        },
         {
           "path": "scripts/generate_codebook.py",
           "anchor": "def load_rows()"
         },
         {
-          "path": "CODEBOOK.md",
-          "anchor": "> Generated file. Edit `literary_and_video_patterns.csv`"
-        }
-      ],
-      "name": "Current source-to-codebook tooling"
-    },
-    {
-      "text": "docs/10_product owns intended users, use cases, scope, and source limitations. It describes product intent; definitions remain proposals requiring empirical testing.",
-      "sources": [
-        {
-          "path": "docs/10_product/101_product_overview.md",
-          "anchor": "## Intended outputs"
+          "path": "scripts/generate_codebook.py",
+          "anchor": "def render("
         },
         {
-          "path": "docs/10_product/103_scope_and_limitations.md",
-          "anchor": "## Known limitations in the source CSV"
+          "path": "CODEBOOK.md",
+          "anchor": "> Generated file."
         }
       ],
-      "name": "Product documentation"
+      "name": "Codebook"
     },
     {
-      "text": "docs/20_requirements defines proposed data obligations. docs/30_design proposes entities, annotation handoffs, and boundary decisions; it does not supply an implemented schema or validator.",
+      "text": "common.py loads strict JSON/configuration and fails explicitly when jsonschema is unavailable. normalise.py checks the frozen source, builds lossless derived tables plus a review queue/manifest, and guards write/check output paths.",
       "sources": [
         {
-          "path": "docs/20_requirements/201_data_requirements.md",
-          "anchor": "## DR-001: Preserve provenance"
+          "path": "lit_pattern/common.py",
+          "anchor": "def read_json("
+        },
+        {
+          "path": "lit_pattern/common.py",
+          "anchor": "def load_config("
+        },
+        {
+          "path": "lit_pattern/common.py",
+          "anchor": "except ImportError as exc:"
+        },
+        {
+          "path": "lit_pattern/normalise.py",
+          "anchor": "def load_source("
+        },
+        {
+          "path": "lit_pattern/normalise.py",
+          "anchor": "def persist("
+        }
+      ],
+      "name": "Configuration and extraction"
+    },
+    {
+      "text": "validate.py checks the fresh catalogue, applies the local JSON Schema, then verifies record references, versions, locators, absence inspection, positive pattern rules, events, and retained adjudication inputs. It reports actual supplied counts without adding missing annotations.",
+      "sources": [
+        {
+          "path": "lit_pattern/validate.py",
+          "anchor": "expected = build(args.config)"
+        },
+        {
+          "path": "lit_pattern/validate.py",
+          "anchor": "def validate_bundle("
+        },
+        {
+          "path": "lit_pattern/validate.py",
+          "anchor": "orders = defaultdict(set)"
+        },
+        {
+          "path": "lit_pattern/validate.py",
+          "anchor": "counts = Counter("
+        }
+      ],
+      "name": "Annotation validation"
+    },
+    {
+      "text": "config/pipeline.json owns source/version/vocabulary and evidence rules. schemas holds the configuration and annotation schemas. requirements pins the direct schema-validation dependency.",
+      "sources": [
+        {
+          "path": "config/pipeline.json",
+          "anchor": "\"source_sha256\""
+        },
+        {
+          "path": "config/pipeline.json",
+          "anchor": "\"pattern_rules\""
+        },
+        {
+          "path": "schemas/annotation.schema.json",
+          "anchor": "\"title\": \"Proposed annotation bundle 0.1.0\""
+        },
+        {
+          "path": "requirements.txt",
+          "anchor": "jsonschema==4.26.0"
+        }
+      ],
+      "name": "External configuration and schemas"
+    },
+    {
+      "text": "data/normalised is reproducible extraction, including exact source bytes. Indicator cells, untyped relation pairs, and workbook mapping cells remain explicit candidates/review work; configured typed relations are separate.",
+      "sources": [
+        {
+          "path": "lit_pattern/normalise.py",
+          "anchor": "'indicator_candidates.csv':"
+        },
+        {
+          "path": "lit_pattern/normalise.py",
+          "anchor": "'relation_candidates.csv':"
+        },
+        {
+          "path": "lit_pattern/normalise.py",
+          "anchor": "'source.csv'"
+        },
+        {
+          "path": "docs/30_design/304_annotation_file_contract.md",
+          "anchor": "The pipeline has not resolved the review queue."
+        },
+        {
+          "path": ".gitattributes",
+          "anchor": "/literary_and_video_patterns.csv -text whitespace=cr-at-eol"
+        }
+      ],
+      "name": "Derived data and semantic boundaries"
+    },
+    {
+      "text": "tests uses real CLI subprocesses and invented cases to test generation, negative failure paths, absence counts, timestamps, versions, and source preservation. It supplies conformance evidence rather than reliability or agreement results.",
+      "sources": [
+        {
+          "path": "tests/test_normalise.py",
+          "anchor": "class NormalisationTests("
+        },
+        {
+          "path": "tests/test_annotations.py",
+          "anchor": "class AnnotationTests("
+        },
+        {
+          "path": "tests/test_annotations.py",
+          "anchor": "def test_eight_named_failure_paths_from_validation_plan("
+        }
+      ],
+      "name": "Verification"
+    },
+    {
+      "text": "Product/use-case documents describe intended work; the model and pilot retain proposed semantics. The file contract and verification record distinguish implemented tooling from SQL, platform, and empirical work still open.",
+      "sources": [
+        {
+          "path": "docs/10_product/102_use_cases.md",
+          "anchor": "# Use Cases"
         },
         {
           "path": "docs/30_design/301_normalised_data_model.md",
-          "anchor": "This is a design proposal. No SQLite or PostgreSQL schema is implemented"
-        },
-        {
-          "path": "docs/30_design/302_annotation_workflow.md",
-          "anchor": "## 1. Register the work"
-        },
-        {
-          "path": "docs/30_design/303_boundary_matrices.md",
-          "anchor": "These matrices are proposed decision aids."
-        }
-      ],
-      "name": "Requirements and proposed design"
-    },
-    {
-      "text": "docs/40_delivery orders normalisation, annotation-contract implementation, pilot materials, independent coding, and revision. PILOT.md specifies the proposed study; docs/50_verification specifies future conformance checks, separate from taxonomy validation.",
-      "sources": [
-        {
-          "path": "docs/40_delivery/401_implementation_plan.md",
-          "anchor": "## Phase 1: Normalisation"
+          "anchor": "This remains the proposed target model."
         },
         {
           "path": "PILOT.md",
-          "anchor": "## Annotator sequence"
+          "anchor": "This is a planned pilot."
         },
         {
-          "path": "docs/50_verification/501_schema_validation_plan.md",
-          "anchor": "Schema verification is separate from taxonomy validation."
+          "path": "docs/30_design/304_annotation_file_contract.md",
+          "anchor": "## Reports and limitations"
         }
       ],
-      "name": "Delivery and verification plans"
-    },
-    {
-      "text": "docs/80_reference provides glossary, design provenance, candidate tooling, and this atlas. The DeepSeek conversation is an informative proposal subordinate to the contract and original CSV.",
-      "sources": [
-        {
-          "path": "docs/00_control/003_document_register.md",
-          "anchor": "| DOC-801 |"
-        },
-        {
-          "path": "docs/80_reference/802_design_proposal_provenance.md",
-          "anchor": "The conversation is informative."
-        },
-        {
-          "path": "docs/00_control/003_document_register.md",
-          "anchor": "| DOC-805 |"
-        }
-      ],
-      "name": "Reference material"
-    },
-    {
-      "text": "Future corpora and private annotation records belong outside public version control. .gitignore excludes local raw/private data, local reports, databases, environments, and credentials; the original CSV and checksum must remain recoverable during normalisation.",
-      "sources": [
-        {
-          "path": "CONTRIBUTING.md",
-          "anchor": "Do not commit full copyrighted works, private corpora, participant data, secrets,"
-        },
-        {
-          "path": ".gitignore",
-          "anchor": "# Local data and analysis outputs"
-        },
-        {
-          "path": "docs/20_requirements/201_data_requirements.md",
-          "anchor": "The original source CSV and its checksum must remain recoverable after"
-        }
-      ],
-      "name": "Data and privacy boundary"
+      "name": "Design and pilot boundary"
     }
   ],
   "flows": [
     {
-      "name": "Generate the codebook (static trace; not executed for this atlas)",
+      "name": "Source CSV to codebook",
       "steps": [
         {
-          "text": "An intentional source-vocabulary change is followed by `python3 scripts/generate_codebook.py`; the main guard dispatches main(), which parses --check and calls load_rows().",
+          "text": "The CLI calls load_rows(), validates required columns and pattern IDs, and hashes source bytes.",
           "sources": [
-            {
-              "path": "README.md",
-              "anchor": "Regenerate the codebook after an intentional source CSV change:"
-            },
-            {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "if __name__ == \"__main__\":"
-            },
             {
               "path": "scripts/generate_codebook.py",
               "anchor": "rows, digest = load_rows()"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "def load_rows()"
             }
           ]
         },
         {
-          "text": "load_rows() resolves the CSV relative to the script repository root, hashes its bytes, and parses UTF-8-with-optional-BOM CSV. Missing source, missing required fields, empty input, blank IDs, and duplicate IDs take explicit error exits.",
+          "text": "render() builds the manual; --check compares exact output and exits with an error on drift, while ordinary invocation writes CODEBOOK.md.",
           "sources": [
             {
               "path": "scripts/generate_codebook.py",
-              "anchor": "ROOT = Path(__file__).resolve().parents[1]"
+              "anchor": "rendered = render(rows, digest)"
             },
             {
               "path": "scripts/generate_codebook.py",
-              "anchor": "digest = hashlib.sha256(data).hexdigest()"
+              "anchor": "if args.check:"
             },
             {
               "path": "scripts/generate_codebook.py",
-              "anchor": "reader = csv.DictReader(handle)"
-            },
-            {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "def fail(message: str) -> None:"
-            },
-            {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "ids = [row[\"pattern_id\"].strip() for row in rows]"
-            }
-          ]
-        },
-        {
-          "text": "render() builds the manual from loaded rows and their digest, including global evidence defaults and per-pattern sections. Without --check, main() writes UTF-8 CODEBOOK.md and reports completion.",
-          "sources": [
-            {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "def render(rows: list[dict[str, str]], digest: str) -> str:"
-            },
-            {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "for row in rows:\n        lines.extend("
-            },
-            {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "OUTPUT.write_text(rendered, encoding=\"utf-8\")"
+              "anchor": "OUTPUT.write_text(rendered"
             }
           ]
         }
       ]
     },
     {
-      "name": "Check codebook consistency (static trace; not executed for this atlas)",
+      "name": "Frozen source to reproducible extraction",
       "steps": [
         {
-          "text": "The documented review command is `python3 scripts/generate_codebook.py --check`. It uses the same CSV loading and rendering path before entering the read-only comparison branch.",
+          "text": "The normalise CLI requires configuration/output paths. build() loads configuration against its schema and checks the configured source checksum, headers, values, namespace, and ID uniqueness.",
           "sources": [
             {
-              "path": "CONTRIBUTING.md",
-              "anchor": "1. Run `python3 scripts/generate_codebook.py --check`."
+              "path": "lit_pattern/normalise.py",
+              "anchor": "def main() -> int:"
             },
             {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "rendered = render(rows, digest)\n\n    if args.check:"
+              "path": "lit_pattern/normalise.py",
+              "anchor": "config = load_config(config_path)\n    raw, rows = load_source"
+            },
+            {
+              "path": "lit_pattern/normalise.py",
+              "anchor": "def load_source("
+            },
+            {
+              "path": "lit_pattern/common.py",
+              "anchor": "def load_config("
             }
           ]
         },
         {
-          "text": "A missing codebook or exact-text mismatch exits with error status 1; stale output names the regeneration command. Matching output prints the pattern count and returns 0.",
+          "text": "Source rows produce patterns, units, invented examples, shared rules, and preserved candidate cells. Only configured relation decisions produce typed relations; unresolved semantics are reported rather than inferred.",
           "sources": [
             {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "fail(f\"generated codebook not found: {OUTPUT}\")"
+              "path": "lit_pattern/normalise.py",
+              "anchor": "for row in rows:"
             },
             {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "if OUTPUT.read_text(encoding=\"utf-8\") != rendered:"
+              "path": "lit_pattern/normalise.py",
+              "anchor": "for item in config['relation_decisions']:"
             },
             {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "fail(\"CODEBOOK.md is stale; run python3 scripts/generate_codebook.py\")"
-            },
-            {
-              "path": "scripts/generate_codebook.py",
-              "anchor": "print(f\"ok: {len(rows)} patterns; CODEBOOK.md matches {SOURCE.name}\")"
+              "path": "lit_pattern/normalise.py",
+              "anchor": "'review_items.json'"
             }
           ]
         },
         {
-          "text": "Success establishes file consistency. It does not establish annotation agreement or pattern validity. Schema validation, import/export, independent annotation, and adjudication flows have plans but no implemented path to trace in this checkout.",
+          "text": "The output mapping includes original source bytes, hashes, and counts. persist() rejects unsafe/unowned destinations and unexpected files; writes replace generated files, while --check compares all expected bytes without writing.",
           "sources": [
             {
-              "path": "README.md",
-              "anchor": "These checks establish file consistency. They do not validate the taxonomy."
+              "path": "lit_pattern/normalise.py",
+              "anchor": "outputs['source.csv'] = raw"
             },
             {
-              "path": "docs/00_control/002_repo_status.md",
-              "anchor": "## Not implemented"
+              "path": "lit_pattern/normalise.py",
+              "anchor": "outputs['manifest.json']"
             },
             {
-              "path": "docs/50_verification/501_schema_validation_plan.md",
-              "anchor": "The plan defines what future validation must establish."
+              "path": "lit_pattern/normalise.py",
+              "anchor": "def persist("
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Private annotation bundle to conformance report",
+      "steps": [
+        {
+          "text": "The validator rebuilds expected extraction in memory and requires an exact matching catalogue before reading the input bundle; stale data is rejected.",
+          "sources": [
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "expected = build(args.config)"
+            },
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "persist(expected, args.catalogue, args.config, check=True)"
+            },
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "bundle = read_json(args.input)"
+            }
+          ]
+        },
+        {
+          "text": "The local schema rejects malformed structure and unknown fields. Python checks source/schema/pattern versions and work, unit, reviewer, evidence, and adjudication references.",
+          "sources": [
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "structural = Draft202012Validator("
+            },
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "if bundle['source_sha256']"
+            },
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "works = index("
+            }
+          ]
+        },
+        {
+          "text": "Absence requires scope/adequacy inspection evidence. Present STR05/06/07/09/10 annotations receive configured evidence checks; event references/order and knowledge maps are checked. Uncertain/absent decisions do not have to invent a positive chain.",
+          "sources": [
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "if annotation['presence'] == 'absent'"
+            },
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "if annotation['presence'] == 'present':\n            rule = config['pattern_rules'].get("
+            },
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "if item['kind'] == 'knowledge_state':"
+            },
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "orders = defaultdict(set)"
+            }
+          ]
+        },
+        {
+          "text": "The CLI emits versions, source checksum, actual supplied counts, errors with paths/codes, and a scope warning. Exit 0 means conformance; it does not verify the truth of the evidence or run a pilot.",
+          "sources": [
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "report = {"
+            },
+            {
+              "path": "lit_pattern/validate.py",
+              "anchor": "return 1 if errors else 0"
+            },
+            {
+              "path": "docs/30_design/304_annotation_file_contract.md",
+              "anchor": "The tests exercise reference integrity"
             }
           ]
         }
@@ -392,95 +511,89 @@
   ],
   "dependencies": [
     {
-      "text": "Observed code imports are standard-library argparse, csv, hashlib, sys, and pathlib; the generator has no imported external package or hosted service client. The declared minimum local Python version is 3.11.",
+      "text": "jsonschema 4.26.0 and referencing 0.37.0 are required for pipeline schema validation and offline reference resolution. Missing schema-validation dependencies fail explicitly. Requirements belong in an ignored virtual environment, not version control.",
+      "sources": [
+        {
+          "path": "requirements.txt",
+          "anchor": "jsonschema==4.26.0"
+        },
+        {
+          "path": "lit_pattern/common.py",
+          "anchor": "except ImportError as exc:"
+        },
+        {
+          "path": ".gitignore",
+          "anchor": ".venv/"
+        },
+        {
+          "path": "requirements.txt",
+          "anchor": "referencing==0.37.0"
+        }
+      ],
+      "name": "Required schema-validation dependency"
+    },
+    {
+      "text": "The existing codebook generator uses argparse, csv, hashlib, sys, and pathlib from the standard library. unittest and subprocess drive conformance tests.",
       "sources": [
         {
           "path": "scripts/generate_codebook.py",
           "anchor": "import argparse\nimport csv\nimport hashlib\nimport sys\nfrom pathlib import Path"
         },
         {
-          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
-          "anchor": "- Python 3.11 or later for generators, validation, and agreement analysis."
+          "path": "tests/test_annotations.py",
+          "anchor": "import subprocess"
+        },
+        {
+          "path": "tests/test_normalise.py",
+          "anchor": "import unittest"
         }
       ],
-      "name": "Current Python tooling"
+      "name": "Standard-library tooling"
     },
     {
-      "text": "SQLite is a planned relational store, not an observed integration. The model proposes normalised CSV or JSONL first for a small pilot and defers PostgreSQL until concurrent access is justified.",
+      "text": "SQLite remains a future option; there is no SQL persistence. Annotation-platform applications and other analytical packages remain candidates, without implemented adapters or agreement analysis.",
       "sources": [
-        {
-          "path": "docs/30_design/301_normalised_data_model.md",
-          "anchor": "## Storage choice"
-        },
         {
           "path": "REPO_CONTRACT.md",
-          "anchor": "There is no runtime application yet."
-        }
-      ],
-      "name": "Planned storage"
-    },
-    {
-      "text": "jsonschema, pytest, pandas or DuckDB, agreement-statistics packages, and ruff are candidate future dependencies. Their listing is a decision reference, not an installation or evaluation record.",
-      "sources": [
-        {
-          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
-          "anchor": "Add dependencies only when their tests and import path exist:"
+          "anchor": "option. Current entry points are:"
         },
         {
-          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
-          "anchor": "This is a decision reference, not an installation record."
-        }
-      ],
-      "name": "Candidate packages"
-    },
-    {
-      "text": "INCEpTION, CATMA, ELAN, Advene, VIA, and a locked spreadsheet are annotation-platform candidates. Selection depends on pilot works and unit types; no export/import integration is implemented.",
-      "sources": [
+          "path": "docs/00_control/002_repo_status.md",
+          "anchor": "## Not implemented"
+        },
         {
           "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
           "anchor": "## Annotation platform candidates"
-        },
-        {
-          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
-          "anchor": "Do not select one until the pilot works and unit types are fixed."
-        },
-        {
-          "path": "docs/00_control/002_repo_status.md",
-          "anchor": "- Annotation-tool integration."
         }
       ],
-      "name": "Candidate annotation platforms"
+      "name": "Planned integrations"
     },
     {
-      "text": "Git is documented for source and schema history. The repository status records public publication at YalcinkayaE/lit_pattern on 2026-11-11 and hosted README/licence checks; the delivery plan records the publication evidence. GitHub publication is separate from any future runtime integration.",
+      "text": "GitHub publication is recorded in repository status. The file pipeline itself has no hosted API or model dependency and only uses local schema references.",
       "sources": [
-        {
-          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
-          "anchor": "- Git for source and schema history."
-        },
-        {
-          "path": "docs/40_delivery/401_implementation_plan.md",
-          "anchor": "## Phase 0a: Public publication"
-        },
         {
           "path": "docs/00_control/002_repo_status.md",
           "anchor": "- Published on 2026-11-11 at"
+        },
+        {
+          "path": "lit_pattern/validate.py",
+          "anchor": "if key in {'$ref', '$dynamicRef'}"
+        },
+        {
+          "path": "docs/30_design/304_annotation_file_contract.md",
+          "anchor": "uses local references, including dynamic references;"
         }
       ],
-      "name": "Version control and publication boundary"
+      "name": "Publication versus runtime"
     }
   ],
   "onboarding": [
     {
-      "text": "Read REPO_CONTRACT.md, then AGENTS.md and the document register. Resolve competing claims using the contract authority order and preserve its status vocabulary.",
+      "text": "Read REPO_CONTRACT.md, AGENTS.md, and the document register for authority and update rules.",
       "sources": [
         {
           "path": "REPO_CONTRACT.md",
           "anchor": "## Authoritative sources"
-        },
-        {
-          "path": "REPO_CONTRACT.md",
-          "anchor": "## Vocabulary rules"
         },
         {
           "path": "AGENTS.md",
@@ -493,71 +606,71 @@
       ]
     },
     {
-      "text": "Inspect literary_and_video_patterns.csv, then CODEBOOK.md for coding rules, source-workbook mappings, and invented examples. Keep source and generated output separate.",
+      "text": "Read the source CSV and generated codebook for the proposed definitions. Pattern statuses remain proposed and original bytes/checksum must be retained.",
       "sources": [
-        {
-          "path": "literary_and_video_patterns.csv",
-          "anchor": "pattern_id,label_type,label,definition,inclusion_criteria,exclusion_criteria,analysis_unit"
-        },
         {
           "path": "CODEBOOK.md",
-          "anchor": "> Generated file. Edit `literary_and_video_patterns.csv`"
-        }
-      ]
-    },
-    {
-      "text": "Read scripts/generate_codebook.py in the order main(), load_rows(), render(), then the --check/write branch. This is the current product-tooling path; there is no application server to launch.",
-      "sources": [
-        {
-          "path": "scripts/generate_codebook.py",
-          "anchor": "def main() -> int:"
-        },
-        {
-          "path": "scripts/generate_codebook.py",
-          "anchor": "def load_rows()"
-        },
-        {
-          "path": "scripts/generate_codebook.py",
-          "anchor": "def render(rows: list[dict[str, str]], digest: str) -> str:"
+          "anchor": "> Generated file."
         },
         {
           "path": "REPO_CONTRACT.md",
-          "anchor": "There is no runtime application yet."
+          "anchor": "A future normalised dataset may replace the CSV"
         }
       ]
     },
     {
-      "text": "From the repository root, the declared consistency command is `python3 scripts/generate_codebook.py --check`; omit --check only to regenerate after an intentional source edit. Neither command was executed during atlas creation; behaviour here is based on source inspection.",
+      "text": "Read the file contract, config/pipeline.json, and schemas, then follow common.load_config(), normalise.load_source()/build()/persist(). Check the review queue before treating candidate cells as operational data.",
+      "sources": [
+        {
+          "path": "docs/30_design/304_annotation_file_contract.md",
+          "anchor": "## Extraction and provenance"
+        },
+        {
+          "path": "lit_pattern/common.py",
+          "anchor": "def load_config("
+        },
+        {
+          "path": "lit_pattern/normalise.py",
+          "anchor": "def build("
+        }
+      ]
+    },
+    {
+      "text": "Follow validate.main() into validate_bundle() and the subprocess tests. The initial schema is 0.1.0 and definition versions refer to the frozen source digest.",
+      "sources": [
+        {
+          "path": "lit_pattern/validate.py",
+          "anchor": "def main() -> int:"
+        },
+        {
+          "path": "lit_pattern/validate.py",
+          "anchor": "def validate_bundle("
+        },
+        {
+          "path": "tests/test_annotations.py",
+          "anchor": "def test_eight_named_failure_paths_from_validation_plan("
+        },
+        {
+          "path": "docs/30_design/304_annotation_file_contract.md",
+          "anchor": "token is `source-` followed by the full source SHA-256"
+        }
+      ]
+    },
+    {
+      "text": "Create a virtual environment and install requirements.txt. Run the README extraction --check, fixture validator, unittest, and codebook --check commands. Recorded verification identifies the exercised interpreter; the declared Python minimum has not been separately tested.",
       "sources": [
         {
           "path": "README.md",
-          "anchor": "## Verify the source CSV and generated codebook"
+          "anchor": "## Extract and validate annotation files"
         },
         {
-          "path": "scripts/generate_codebook.py",
-          "anchor": "if args.check:"
+          "path": "docs/50_verification/502_data_pipeline_verification.md",
+          "anchor": "## Scope and source"
         }
       ]
     },
     {
-      "text": "For data work, read the data requirements, normalised-model proposal, and annotation workflow. Preserve the original CSV and checksum; do not infer typed relations by blindly splitting legacy cells.",
-      "sources": [
-        {
-          "path": "docs/20_requirements/201_data_requirements.md",
-          "anchor": "## DR-001: Preserve provenance"
-        },
-        {
-          "path": "docs/30_design/301_normalised_data_model.md",
-          "anchor": "## Migration rules"
-        },
-        {
-          "path": "docs/30_design/302_annotation_workflow.md",
-          "anchor": "## 1. Register the work"
-        }
-      ]
-    },
-    {
-      "text": "Before pilot or status work, read PILOT.md, boundary matrices, the schema-validation plan, and CONTRIBUTING.md. Independent coding and adjudication evidence are required for status changes; conformance fixtures and empirical flows remain unimplemented.",
+      "text": "For empirical work, read PILOT.md, boundary matrices, CONTRIBUTING, and the status/open-items documents. Resolve semantic review items, prepare located cases, and retain independent coding before making status changes.",
       "sources": [
         {
           "path": "PILOT.md",
@@ -568,33 +681,25 @@
           "anchor": "## Adjudication caveat"
         },
         {
-          "path": "docs/50_verification/501_schema_validation_plan.md",
-          "anchor": "## Behavioural checks"
-        },
-        {
           "path": "CONTRIBUTING.md",
           "anchor": "A move to `pilot_tested` requires:"
         },
         {
-          "path": "docs/00_control/002_repo_status.md",
-          "anchor": "## Not implemented"
+          "path": "REPO_CONTRACT.md",
+          "anchor": "## Open items"
         }
       ]
     },
     {
-      "text": "Check the repository status and implementation plan for publication evidence and open work: normalisation, annotation-contract implementation, conformance checks, pilot cases, and unresolved owner contact metadata. Public publication is recorded; empirical pilot work remains unimplemented.",
+      "text": "Use the remaining-work checklist for integration, semantic review, contract/pilot preparation, and completion evidence. Conditional SQL, platform, model, and workbook work is identified separately.",
       "sources": [
         {
-          "path": "docs/00_control/002_repo_status.md",
-          "anchor": "## Required next action"
+          "path": "docs/40_delivery/403_remaining_work.md",
+          "anchor": "# Remaining Work"
         },
         {
-          "path": "REPO_CONTRACT.md",
-          "anchor": "## Open items"
-        },
-        {
-          "path": "docs/40_delivery/401_implementation_plan.md",
-          "anchor": "## Phase 0a: Public publication"
+          "path": "docs/40_delivery/403_remaining_work.md",
+          "anchor": "## Conditional later work"
         }
       ]
     }

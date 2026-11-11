@@ -1,0 +1,60 @@
+pattern_id,source_text
+GEN01,A3 Comedy; J3; K3
+GEN02,A5 Drama
+GEN03,A6 Thriller
+GEN04,A7 Romance
+GEN05,A8 Science Fiction
+GEN06,A9 Fantasy
+GEN07,A10 Mystery
+GEN08,A11 Horror
+GEN09,A12 Historical Fiction
+GEN10,A13 Realistic Fiction
+ARC01,A14 Bildungsroman; B14; K14
+FORM01,A15 Epistolary; I15
+MODE01,A16 Satire; B16; D16; G16; K16
+MODE02,A17 Magical Realism; B17; C17; K17
+DEV01,B2 Contradictions; B3:B17
+DEV02,B4; G4; D16
+DEV03,A4 Sarcasm; B4:K4
+DEV04,G2 Exaggeration; G3:G17 redefined
+DEV05,G16 Parody
+DEV06,D2 Metaphors; D3:D17 corrected
+DEV07,D5; D17; I17
+DEV08,H2 Rhetorical Questions; H3:H17 corrected
+DEV09,E2 Imperatives; E3:E17 corrected
+DEV10,I2 Pithiness; I3:I17 corrected
+DEV11,F2 Shared Truths; F3:F17 reframed
+STR01,B5; B7; B13; B14
+STR02,C2 Surprise; C3:C17
+STR03,C5; C10; C15; K15
+STR04,C6; G6; K6
+STR05,D6 Ominous foreshadowing; H11
+STR06,B6; G10; H10
+STR07,H15 Unreliable narrators
+STR08,B15; F15
+STR09,Extension: sequence recommendation
+STR10,Extension: sequence and viewpoint recommendation
+ARC02,E9 Heroic journeys; G9 Epic quests
+ARC03,C7; G7; K7
+WORLD01,B8; E8; F8; G8; D9; I8
+WORLD02,D3; D12; F12; F13; I12
+FUN01,K2 Narrative Function; E6
+FUN02,K5; K14
+FUN03,F4; F16; K4; K16
+FUN04,K5; K8; K12; K13; K17
+FUN05,I10; K10
+VID01,Extension: video-specific expression
+VID02,Extension: video-specific expression
+VID03,Extension: editing and sequence
+VID04,Extension: sound and silence
+VID05,C11 Jump scares relocated
+VID06,Extension: performance
+VID07,Extension: framing
+VID08,Extension: music and sound
+EFF01,J3; K3
+EFF02,J6; J11
+EFF03,J7
+EFF04,J8; J9; J17
+EFF05,J5; J13
+EFF06,J10; J12; J14; J15; J16; J17
+EFF07,J4

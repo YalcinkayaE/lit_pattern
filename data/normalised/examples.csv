@@ -1,0 +1,60 @@
+example_id,pattern_id,kind,description
+GEN01-invented,GEN01,invented,A committee spends its meeting arguing about how to shorten meetings.
+GEN02-invented,GEN02,invented,Two siblings disagree over whether to sell their family home.
+GEN03-invented,GEN03,invented,A witness must reach a hearing while someone tries to intercept her.
+GEN04-invented,GEN04,invented,Two former partners rebuild trust while restoring a house.
+GEN05-invented,GEN05,invented,"Memory copies can testify, but disagree with their originals."
+GEN06-invented,GEN06,invented,A town must negotiate with the river that remembers its dead.
+GEN07-invented,GEN07,invented,A librarian traces why one book disappears every winter.
+GEN08-invented,GEN08,invented,A tenant hears her own voice answering from a sealed room.
+GEN09-invented,GEN09,invented,An invented apprentice negotiates a printing dispute in eighteenth-century London.
+GEN10-invented,GEN10,invented,A carer balances night shifts with a tenancy dispute.
+ARC01-invented,ARC01,invented,A student revises her idea of loyalty after leaving home.
+FORM01-invented,FORM01,invented,A disappearance is reconstructed entirely through voice messages.
+MODE01-invented,MODE01,invented,An office awards prizes for appearing too busy to work.
+MODE02-invented,MODE02,invented,Each spring the dead return for tea and neighbours argue over seating.
+DEV01-invented,DEV01,invented,A safety inspector blocks every emergency exit with equipment.
+DEV02-invented,DEV02,invented,After the roof collapses: What excellent workmanship.
+DEV03-invented,DEV03,invented,You remembered the deadline only a week late. Impressive.
+DEV04-invented,DEV04,invented,I have filled in this form a million times.
+DEV05-invented,DEV05,invented,A heroic quest speech announces a trip to replace the office kettle.
+DEV06-invented,DEV06,invented,Her inbox was a swamp.
+DEV07-invented,DEV07,invented,An unused chair recurs whenever the family avoids discussing an absence.
+DEV08-invented,DEV08,invented,Who would call this fair? spoken after an acknowledged injustice.
+DEV09-invented,DEV09,invented,Please leave before the guard returns.
+DEV10-invented,DEV10,invented,He inherited the house and the silence.
+DEV11-invented,DEV11,invented,Everyone rehearses their complaint; no one speaks when the landlord arrives.
+STR01-invented,STR01,invented,Telling the truth will protect a stranger but expose her brother.
+STR02-invented,STR02,invented,A threatening visitor turns out to be returning a lost scarf.
+STR03-invented,STR03,invented,A supposed farewell letter is revealed to predate the friendship.
+STR04-invented,STR04,invented,A child searches for a key as water rises behind the door.
+STR05-invented,STR05,invented,A loose stair is mentioned before it collapses during an escape.
+STR06-invented,STR06,invented,Mud on a suspect’s boots suggests the crime scene until his flooded garden is shown.
+STR07-invented,STR07,invented,"The narrator denies entering the room, then describes what only its occupant could see."
+STR08-invented,STR08,invented,Two witnesses describe the same dinner as celebration and humiliation.
+STR09-invented,STR09,invented,An early lesson in knot tying enables a later rescue.
+STR10-invented,STR10,invented,We see the invitation being forged before its recipient celebrates it.
+ARC02-invented,ARC02,invented,A courier crosses a closed city to deliver medicine.
+ARC03-invented,ARC03,invented,Rivals become collaborators after accepting responsibility for a shared failure.
+WORLD01-invented,WORLD01,invented,A borrowed memory fades whenever its owner tells a lie.
+WORLD02-invented,WORLD02,invented,A worker cannot attend a hearing because leaving her shift risks dismissal.
+FUN01-invented,FUN01,invented,A warning causes the travellers to abandon the bridge.
+FUN02-invented,FUN02,invented,Someone who previously avoided conflict returns to testify.
+FUN03-invented,FUN03,invented,A complaints office rejects complaints about its inaccessible entrance.
+FUN04-invented,FUN04,invented,Repeated exchanges of gifts explore obligation and control.
+FUN05-invented,FUN05,invented,A dated receipt disproves one witness’s timeline.
+VID01-invented,VID01,invented,A voice-over calls the house peaceful while doors slam in every room.
+VID02-invented,VID02,invented,"A boardroom vote cuts to a feeding frenzy, inviting a predation comparison."
+VID03-invented,VID03,invented,Cuts alternate between a departing train and a runner approaching the platform.
+VID04-invented,VID04,invented,A noisy dinner falls silent when a name is spoken.
+VID05-invented,VID05,invented,"After a still corridor shot, a face enters the frame with a sharp sound."
+VID06-invented,VID06,invented,A character says I am pleased while stepping back and avoiding eye contact.
+VID07-invented,VID07,invented,A close shot hides the second person at the table until a wider shot reveals them.
+VID08-invented,VID08,invented,Cheerful music accompanies an increasingly destructive celebration.
+EFF01-invented,EFF01,invented,"After a failed escape, the captives argue about who packed the sandwiches."
+EFF02-invented,EFF02,invented,Footsteps stop outside the locked bedroom.
+EFF03-invented,EFF03,invented,A traveller repairs a partner’s coat before leaving without waking them.
+EFF04-invented,EFF04,invented,A map begins showing streets that will only exist tomorrow.
+EFF05-invented,EFF05,invented,"A worker practises asking for leave, then deletes the message."
+EFF06-invented,EFF06,invented,A victory repeats the harm the protagonist originally opposed.
+EFF07-invented,EFF07,invented,A toast thanks the one guest who was deliberately excluded.

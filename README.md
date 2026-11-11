@@ -1,8 +1,9 @@
 # Literary and Video Pattern Database
 
 This repository holds a proposed pattern vocabulary and coding manual for
-literary and audiovisual analysis. It is documentation-first. The current
-definitions have not been validated on a labelled corpus.
+literary and audiovisual analysis, with file-based extraction and annotation
+validation tools. The current definitions have not been validated on a labelled
+corpus.
 
 The public repository is [YalcinkayaE/lit_pattern](https://github.com/YalcinkayaE/lit_pattern).
 Its software is MIT licensed and its original taxonomy and documentation content
@@ -19,8 +20,10 @@ audiovisual expression, interpreted effects, and related label types.
 - Source CSV preserved with 59 pattern rows and 18 columns.
 - Human-readable coding manual generated from the CSV.
 - Proposed normalization, annotation, pilot, and verification plans documented.
-- No SQL schema, annotation validator, annotation platform integration, or pilot
-  result is implemented in this repository yet.
+- Deterministic extraction preserves the source and records unresolved indicator,
+  relation, and mapping review items.
+- JSON Schema and a Python validator check the proposed annotation file contract.
+- No SQL schema, annotation platform integration, or real pilot result exists.
 
 ## Read first
 
@@ -47,10 +50,14 @@ audiovisual expression, interpreted effects, and related label types.
 | Data requirements | [`docs/20_requirements/201_data_requirements.md`](docs/20_requirements/201_data_requirements.md) |
 | Proposed data model | [`docs/30_design/301_normalised_data_model.md`](docs/30_design/301_normalised_data_model.md) |
 | Annotation workflow | [`docs/30_design/302_annotation_workflow.md`](docs/30_design/302_annotation_workflow.md) |
+| Annotation file contract and commands | [`docs/30_design/304_annotation_file_contract.md`](docs/30_design/304_annotation_file_contract.md) |
 | Boundary matrices | [`docs/30_design/303_boundary_matrices.md`](docs/30_design/303_boundary_matrices.md) |
+| Remaining-work checklist | [`docs/40_delivery/403_remaining_work.md`](docs/40_delivery/403_remaining_work.md) |
 | Delivery plan | [`docs/40_delivery/401_implementation_plan.md`](docs/40_delivery/401_implementation_plan.md) |
 | Pilot | [`PILOT.md`](PILOT.md) |
 | Verification plan | [`docs/50_verification/501_schema_validation_plan.md`](docs/50_verification/501_schema_validation_plan.md) |
+| Repository test plan | [`docs/50_verification/503_repository_test_plan.md`](docs/50_verification/503_repository_test_plan.md) |
+| Data pipeline verification | [`docs/50_verification/502_data_pipeline_verification.md`](docs/50_verification/502_data_pipeline_verification.md) |
 | Provenance | [`docs/80_reference/802_design_proposal_provenance.md`](docs/80_reference/802_design_proposal_provenance.md) |
 | Tool and corpus requirements | [`docs/80_reference/804_tooling_and_corpus_requirements.md`](docs/80_reference/804_tooling_and_corpus_requirements.md) |
 | Repository atlas and agent onboarding | [`docs/80_reference/repo_context/README.md`](docs/80_reference/repo_context/README.md) |
@@ -71,13 +78,35 @@ python3 scripts/generate_codebook.py
 
 These checks establish file consistency. They do not validate the taxonomy.
 
+## Extract and validate annotation files
+
+Use Python 3.11+ from the repository root:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m lit_pattern.normalise --config config/pipeline.json --output data/normalised
+.venv/bin/python -m lit_pattern.normalise --config config/pipeline.json --output data/normalised --check
+.venv/bin/python -m lit_pattern.validate --config config/pipeline.json --catalogue data/normalised --input tests/fixtures/literary.json
+.venv/bin/python -m unittest discover -s tests -v
+```
+
+The validation example is invented test data. Pass a privately stored bundle to
+`--input` for actual annotations. See the
+[file contract](docs/30_design/304_annotation_file_contract.md) for fields, error
+reports, supported rules, and extraction review items. The original CSV remains
+authoritative; the derived tables do not resolve ambiguous source semantics.
+
 ## Immediate next work
 
-1. Normalise the source CSV into separate patterns, indicators, examples,
-   relations, mappings, and evidence-rule tables.
-2. Add a schema, validator, and conformance tests.
-3. Prepare a small mixed-media pilot with located cases.
-4. Run independent annotation and record the observed disagreements before
+See the [remaining-work checklist](docs/40_delivery/403_remaining_work.md) for
+sequenced tasks, completion evidence, and conditional follow-up work.
+
+1. Review indicator segmentation, relation typing, mapping rationale, and missing
+   per-pattern guidance in `data/normalised/review_items.json`.
+2. Prepare a small mixed-media pilot with located cases and review the proposed
+   annotation contract against it.
+3. Run independent annotation and record the observed disagreements before
    changing any pattern definition.
 
 ## Licence

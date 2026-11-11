@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "source_sha256": "a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d",
+  "works": [
+    {
+      "work_id": "w1",
+      "title": "Invented test work",
+      "version": "fixture-1",
+      "modality": "video"
+    }
+  ],
+  "units": [
+    {
+      "unit_id": "u1",
+      "work_id": "w1",
+      "unit_type": "scene",
+      "locator": {
+        "type": "timestamp",
+        "start": 1,
+        "end": 2
+      }
+    }
+  ],
+  "reviewers": [
+    {
+      "reviewer_id": "r1"
+    }
+  ],
+  "annotations": [
+    {
+      "annotation_id": "a1",
+      "work_id": "w1",
+      "unit_id": "u1",
+      "pattern_id": "STR10",
+      "pattern_version": "source-a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d",
+      "schema_version": "0.1.0",
+      "presence": "present",
+      "rationale": "Invented rationale for conformance only",
+      "reviewer": "r1",
+      "modality": "video",
+      "created_at": "2026-11-11T12:00:00Z",
+      "evidence": [
+        {
+          "evidence_id": "e0",
+          "kind": "knowledge_state",
+          "description": "Invented conformance evidence",
+          "locator": {
+            "type": "timestamp",
+            "start": 1,
+            "end": 2
+          },
+          "role": "knowledge_state",
+          "knowledge": [
+            {
+              "holder": "audience",
+              "information": "The invitation was forged",
+              "knows": true
+            },
+            {
+              "holder": "recipient",
+              "information": "The invitation was forged",
+              "knows": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "adjudications": []
+}

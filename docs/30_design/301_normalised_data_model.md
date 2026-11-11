@@ -16,8 +16,11 @@ related:
 
 # Normalised Data Model
 
-This is a design proposal. No SQLite or PostgreSQL schema is implemented in this
-repository yet.
+This remains the proposed target model. The file-based extraction and annotation
+validator implement a subset, documented in
+[the file contract](304_annotation_file_contract.md). No SQLite or PostgreSQL
+schema is implemented. Candidate indicator groups, relation links, and workbook
+mappings retain unresolved review items rather than inferred semantics.
 
 ## Core entities
 

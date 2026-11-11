@@ -23,10 +23,11 @@ Purpose: maintain a proposed, evidence-oriented pattern database and coding
 manual for literary and audiovisual analysis, together with the governance,
 normalisation, annotation, and validation work required before empirical use.
 
-Current status: documentation-first repository initialised on 2026-11-11. The
-source pattern CSV is present. The normalised schema, validation tooling, pilot
-corpus, annotations, inter-annotator results, and validated pattern statuses do
-not yet exist in this repository.
+Current status: file-based command-line tooling and proposed coding materials.
+The original source CSV, deterministic extraction, annotation JSON Schema,
+validator, and conformance tests are present. Extracted indicator groups, untyped
+relations, and workbook mappings retain explicit review items. No real pilot
+corpus, annotations, agreement results, or validated pattern statuses exist.
 
 Distribution status: public release confirmed by the repository owner on
 2026-11-11. The software, taxonomy, documentation, corpus, and privacy boundaries
@@ -47,8 +48,9 @@ taxonomy and documentation content use CC BY 4.0, as stated in `LICENSE`.
 ## Current non-scope
 
 - No claim that any pattern definition has been validated.
-- No claim that an annotation tool, database, validator, or pilot has been
-  implemented.
+- No claim that an annotation platform, database, or pilot has been implemented.
+- No claim that extraction review items have been resolved or that conformance
+  checks establish the truth of an annotation.
 - No distribution of copyrighted literary or audiovisual corpora.
 - No automated assumption that an LLM can infer authorial intention, audience
   response, or pattern absence.
@@ -82,25 +84,44 @@ and validation of the normalised extract.
 
 ## Preferred runtime and entry points
 
-There is no runtime application yet.
-
-The intended analysis toolchain is Python 3.11 or later with SQLite for the
-initial single-user implementation. Dependency versions are not selected.
-Planned entry points are:
+The runtime consists of command-line file tools; there is no service or
+annotation application. Python 3.11 or later is required. The extraction and
+annotation tools use jsonschema 4.26.0, declared in `requirements.txt`; the
+codebook generator uses the standard library. SQLite remains a future storage
+option. Current entry points are:
 
 - `literary_and_video_patterns.csv`: current source vocabulary.
 - `CODEBOOK.md`: generated human-readable view of the source vocabulary.
 - `PILOT.md`: controlled pilot plan.
-- Future normalised CSV or SQL artefacts under `data/`.
-- Future annotation validation scripts and conformance tests under `tests/`.
+- `python3 -m lit_pattern.normalise --config config/pipeline.json --output data/normalised`: deterministic extraction; add `--check` for freshness.
+- `python3 -m lit_pattern.validate --config config/pipeline.json --catalogue data/normalised --input <bundle.json>`: JSON bundle validation.
+- `schemas/annotation.schema.json`: proposed annotation contract version 0.1.0.
+- `config/pipeline.json`: explicit versions, vocabularies, source checksum, typed
+  relation decisions, and evidence-role rules.
+- `python3 -m unittest discover -s tests -v`: conformance and boundary tests.
+
+`data/normalised/` is a derived extraction, not a replacement authority. Its
+manifest records counts and hashes and it retains an exact `source.csv` copy.
+`indicator_candidates.csv` preserves whole indicator cells.
+`relation_candidates.csv` preserves listed ID pairs without assigning types;
+`relations.csv` contains only explicit configured decisions. Workbook mapping
+cells remain intact pending decomposition and rationale review.
 
 ## Verification surface
 
-Current checks are limited to:
+Current file and conformance checks cover:
 
 - confirming that the source CSV parses with the Python `csv` module;
 - confirming unique `pattern_id` values and the expected column set;
-- confirming that `CODEBOOK.md` matches the source CSV through its generator.
+- confirming that `CODEBOOK.md` matches the source CSV through its generator;
+- deterministic extraction, source/configuration checksums, source preservation,
+  and freshness checks for generated outputs;
+- JSON structure, IDs, work/unit/reviewer/evidence references, versions, locator
+  spans, sequence order, and retained adjudication inputs;
+- adequate-inspection records for absence and positive evidence-role rules for
+  STR05, STR06, STR07, STR09, and STR10;
+- invented positive and negative conformance fixtures. These are test data, not
+  pilot observations.
 
 The following do not count as verification of the taxonomy:
 
@@ -120,10 +141,13 @@ records.
   unresolved in controlled-document headers.
 - Decide whether the operational source of truth will be normalised CSV, SQLite,
   or both.
-- Extract indicators, typed relations, workbook mappings, examples, and
-  per-pattern evidence overrides from the flat source CSV.
-- Define and validate the annotation JSON Schema.
-- Add the proposed SQL DDL and conformance tests.
+- Resolve indicator segmentation, relation typing, workbook mapping rationale,
+  and missing per-pattern false-positive/evidence-threshold guidance recorded
+  in `data/normalised/review_items.json`.
+- Pilot and review the implemented proposed annotation contract; extend
+  pattern-specific evidence rules where justified.
+- Add SQL DDL only if a relational store is selected.
+- Define persistent status-history enforcement before permitting status updates.
 - Select a text and video annotation tool for the pilot.
 - Populate located exemplars, hard negatives, and borderline cases for the pilot
   patterns.
