@@ -1,0 +1,34 @@
+{
+  "config_sha256": "5a585328f80cf5b09fdf9389dbab3ac07728b18a50e983ac9c887eab366c3a89",
+  "files": {
+    "analysis_units.csv": "f97ebd70ed33eee199ea204e8c745fac07b44325af9fe48f9de30c1cbfe3f292",
+    "evidence_rules.csv": "ff8b51d6850a39e2fe3020e13006a10d0e549a22d8516936dec81c70b44151d8",
+    "examples.csv": "3f3d3968dcdea915467aab97cbeb84c86e97aa893300955a77430e0ba375b890",
+    "indicator_candidates.csv": "9183eccdfe8202427e41032ec980621b1924a2637fcaad1dc89179eacdea34f3",
+    "label_types.csv": "a0a83e2ed54e1bb62cfd7630156e7fdab1990529f645987ca4e92bf1d24f4905",
+    "pattern_units.csv": "0cc3d6cd81cd3fb043d213fc2a328ebd2ee07809b8a971aff4af0d56ee3b38cd",
+    "patterns.csv": "ea58d4262210648eff317a795940a729abafde3e99ce70ceb433afbaafcbb613",
+    "relation_candidates.csv": "158586dd9485a80c9eadc12de4e8679f5241514d0da67753bddc24153e048e54",
+    "relations.csv": "68d542ac1d0cc2218e7b2cc3538f90b1d016ab3c9767f73fb2e511c31bba1b11",
+    "review_items.json": "473b646ab22a709211539e968e6cce0b5b31f911d094c1c4aff8fb0741240ec3",
+    "source.csv": "a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d",
+    "workbook_mappings.csv": "6967c9494d23867f563f2d9ce45eef09fc68c241eb747c7b256ff0f7b14cb1d0"
+  },
+  "generated_by": "lit_pattern.normalise",
+  "normalisation_version": "0.1.0",
+  "pattern_version": "source-a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d",
+  "rows": {
+    "analysis_units.csv": 5,
+    "evidence_rules.csv": 1,
+    "examples.csv": 59,
+    "indicator_candidates.csv": 118,
+    "label_types.csv": 13,
+    "pattern_units.csv": 177,
+    "patterns.csv": 59,
+    "relation_candidates.csv": 137,
+    "relations.csv": 0,
+    "workbook_mappings.csv": 59
+  },
+  "schema_version": "0.1.0",
+  "source_sha256": "a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d"
+}

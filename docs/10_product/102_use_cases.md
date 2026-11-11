@@ -31,14 +31,16 @@ They are not records of completed studies or observed user adoption.
 The current materials are the
 [source CSV](../../literary_and_video_patterns.csv), the generated
 [codebook](../../CODEBOOK.md), and the registered plans. There is no annotation
-application, implemented annotation schema, tool integration, or pilot result.
+application, annotation-platform integration, or pilot result. Deterministic
+extraction and an executable proposed annotation contract are available through
+the [file tools](../30_design/304_annotation_file_contract.md).
 The [repository contract](../../REPO_CONTRACT.md) governs status and scope.
 
 ## Choosing a use case
 
 | Task | Use case | What the current repository provides | Further prerequisites |
 |---|---|---|---|
-| Code passages or scenes for a research question | Corpus annotation and computational humanities | Proposed definitions, evidence rules, and annotation design | Fixed units, located cases, a tested schema, independent coding, and analysis tooling |
+| Code passages or scenes for a research question | Corpus annotation and computational humanities | Proposed definitions, extracted tables, evidence rules, and an initial annotation validator | Fixed units, located cases, pilot review of the implemented schema, independent coding, and agreement tooling |
 | Examine a pattern across prose and screen | Comparative media analysis | Separate literature and video indicators | Selected versions, comparable units, and reviewed examples in both modalities |
 | Prepare a close-reading or film-analysis exercise | Teaching | Definitions, criteria, invented examples, and creative prompts | Teacher review and located real cases before assessment or calibration |
 | Plan a narrative device while drafting | Creative tooling | The source `creative_use` guidance | A writer's draft and manual tracking; software support would require implementation |
@@ -118,8 +120,9 @@ log that lets another reviewer recover how a label was assigned.
 event or disclosure. Retain ominous atmosphere without a supported later link as
 a possible negative or uncertain case, applying the source criteria.
 
-**Prerequisites and boundary:** the schema, cases, independent annotations, and
-analysis tooling still need to be prepared. Counts from an untested coding
+**Prerequisites and boundary:** the initial schema and validator are implemented.
+Located cases, independent annotations, agreement tooling, and pilot review of
+the contract still need to be prepared. Counts from an untested coding
 procedure do not establish pattern reliability. Follow the pilot before making
 status decisions.
 
@@ -286,8 +289,9 @@ together with recorded corrections, failure cases, and comparison results.
 both locators exist and that the later event supports the proposed connection.
 A model suggestion without the later context cannot establish foreshadowing.
 
-**Prerequisites and boundary:** no model integration, prompt evaluation, or
-annotation validator exists here. This is a future evaluated workflow. A model
+**Prerequisites and boundary:** the annotation validator is implemented, but no
+model integration or prompt evaluation exists here. This remains a future
+evaluated workflow. A model
 miss or unavailable segment cannot establish pattern absence, authorial
 intention, or audience response.
 

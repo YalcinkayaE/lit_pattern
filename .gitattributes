@@ -1,0 +1,3 @@
+# Preserve original workbook exports byte-for-byte, including CRLF endings.
+/literary_and_video_patterns.csv -text whitespace=cr-at-eol
+/data/normalised/source.csv -text whitespace=cr-at-eol

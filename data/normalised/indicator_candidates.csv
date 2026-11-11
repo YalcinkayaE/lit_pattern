@@ -1,0 +1,119 @@
+pattern_id,modality,source_text
+GEN01,literature,"Comic narration, incongruity, reversals."
+GEN01,video,"Comic performance, staging, timing or editing."
+GEN02,literature,"Conflicting goals, choices and consequences."
+GEN02,video,Performance and scenes develop consequential conflict.
+GEN03,literature,"Deadlines, pursuit, danger and restricted knowledge."
+GEN03,video,"Threat staging, pursuit, deadlines and suspenseful sound."
+GEN04,literature,"Intimacy, relational obstacles and decisions."
+GEN04,video,"Dialogue, performance and staging develop the relationship."
+GEN05,literature,Explanations and consequences of speculative mechanisms.
+GEN05,video,"Technology, environments and their causal consequences."
+GEN06,literature,"Magical events, rules and consequences."
+GEN06,video,Depicted magic and its effects on events.
+GEN07,literature,"Clues, competing explanations and deductions."
+GEN07,video,"Clue placement, investigation and later reinterpretation."
+GEN08,literature,"Uncanny detail, vulnerability and threatening events."
+GEN08,video,"Threat imagery, unsettling sound, performance and pacing."
+GEN09,literature,"Period institutions, material conditions and social relations."
+GEN09,video,"Period setting, dialogue and historically situated conflict."
+GEN10,literature,"Everyday settings, plausible causality and relationships."
+GEN10,video,Ordinary environments and plausible events and behaviour.
+ARC01,literature,Changing self-understanding across chapters.
+ARC01,video,Choices and performance establish change across scenes.
+FORM01,literature,"Letters, diaries, messages and records."
+FORM01,video,"Screens, recordings, letters or documents deliver the narrative."
+MODE01,literature,"Ironic narrator, parody and exaggerated institutions."
+MODE01,video,"Performance, visual juxtaposition and institutional parody."
+MODE02,literature,Unexplained extraordinary events narrated as ordinary.
+MODE02,video,Extraordinary events accepted within everyday staging and behaviour.
+DEV01,literature,Opposed statements or expectation-breaking description.
+DEV01,video,"Mismatch between speech, action, image or sound."
+DEV02,literature,Literal wording conflicts with contextual evaluation.
+DEV02,video,"Wording, delivery and situation jointly support ironic meaning."
+DEV03,literature,Pointed mockery in dialogue or narration.
+DEV03,video,"Mocking wording, delivery and interaction."
+DEV04,literature,"Overstated quantity, reaction or comparison."
+DEV04,video,"Excessive dialogue, performance, visual scale or sound."
+DEV05,literature,"Imitated diction, structure or genre conventions."
+DEV05,video,"Imitated shots, music, performance or genre staging."
+DEV06,literature,Non-literal predication or sustained comparison.
+DEV06,video,Dialogue or audiovisual associations establish cross-domain comparison.
+DEV07,literature,"Recurring images, objects or phrases."
+DEV07,video,"Repeated props, colours, sounds or compositions."
+DEV08,literature,Question wording and surrounding response expectations.
+DEV08,video,"Question, delivery and interaction show assertion or challenge."
+DEV09,literature,"Commands, requests, warnings or pleas with requested action."
+DEV09,video,Spoken or displayed instruction and its addressee.
+DEV10,literature,Compact formulation with a supported implication.
+DEV10,video,"Brief dialogue, title card or concise audiovisual statement."
+DEV11,literature,Generalising narration or recognisable social interaction.
+DEV11,video,"Interaction, dialogue or framing invites recognition."
+STR01,literature,"Choices, competing obligations and consequences."
+STR01,video,"Actions, dialogue and staging establish incompatible aims."
+STR02,literature,"Reversal, unexpected disclosure or punchline."
+STR02,video,"Reveal, action, cut or sound violates established expectation."
+STR03,literature,Disclosure reframes earlier descriptions or testimony.
+STR03,video,"A reveal reframes earlier shots, dialogue or actions."
+STR04,literature,"Delayed resolution, deadlines or threatened goals."
+STR04,video,"Cross-cutting, performance and sound maintain an unresolved outcome."
+STR05,literature,An early detail later becomes consequential.
+STR05,video,"A prop, sound, shot or remark anticipates a later event."
+STR06,literature,Selective clues or testimony support a displaced explanation.
+STR06,video,"Attention, framing or editing directs suspicion later revised."
+STR07,literature,Contradictions between account and corroborating events.
+STR07,video,Voice-over conflicts with depicted evidence or later disclosure.
+STR08,literature,"Alternating focalisation, narrators or documents."
+STR08,video,Replayed events or sequences aligned with different characters.
+STR09,literature,"An introduced skill, object or rule later matters."
+STR09,video,"A shown prop, action or sound later resolves or complicates events."
+STR10,literature,Reader is shown a danger before the protagonist encounters it.
+STR10,video,A shot reveals a hidden observer whom the character cannot see.
+ARC02,literature,Stages of pursuit and changing obstacles.
+ARC02,video,Journey or pursuit sequences with objective-linked consequences.
+ARC03,literature,"Dialogue and decisions alter trust, intimacy or dependence."
+ARC03,video,"Performance, action and interaction establish relational change."
+WORLD01,literature,Exposition and events establish speculative constraints.
+WORLD01,video,"Demonstrated mechanisms, dialogue and consequences establish rules."
+WORLD02,literature,"Work, law, class, custom and material constraints."
+WORLD02,video,"Environment, interaction and institutions constrain action."
+FUN01,literature,A decision changes what can happen next.
+FUN01,video,An action or disclosure changes the causal direction.
+FUN02,literature,"Choices, reflection and changed responses."
+FUN02,video,Performance and choices reveal or alter dispositions.
+FUN03,literature,"Consequences, contrast or narration expose a practice."
+FUN03,video,"Staging, dialogue and juxtaposition expose institutional effects."
+FUN04,literature,"Recurring choices, images and opposed positions."
+FUN04,video,Recurring audiovisual motifs and choices develop a concern.
+FUN05,literature,"Clues, deductions and revised explanations."
+FUN05,video,Investigation and disclosed detail alter possible explanations.
+VID01,literature,Narration conflicts with described action; cross-media analogue.
+VID01,video,Dialogue or voice-over conflicts with image or non-speech audio.
+VID02,literature,Non-literal image or sound description offers an analogue.
+VID02,video,"Match, juxtaposition or sound association invites comparison."
+VID03,literature,Alternating passages offer a structural analogue.
+VID03,video,Repeated cuts alternate action strands.
+VID04,literature,A marked pause or omitted reply offers an analogue.
+VID04,video,Sound drops out or a salient response is withheld.
+VID05,literature,Abrupt intrusive event offers a partial analogue.
+VID05,video,"Sudden image, movement or sound follows a contrasting interval."
+VID06,literature,"Described gesture, delivery and action supply an analogue."
+VID06,video,"Prosody, expression, gesture or blocking changes interpretation."
+VID07,literature,Selective description and focalisation offer an analogue.
+VID07,video,"Composition, focus and camera position control access."
+VID08,literature,Musical references or rhythmic description offer partial analogues.
+VID08,video,"Score, ambience or sound design frames the scene."
+EFF01,literature,Punchline or tonal shift after tension.
+EFF01,video,"Comic action, delivery or editing interrupts tension."
+EFF02,literature,Threat descriptions and unresolved stakes.
+EFF02,video,"Threat staging, sound, editing and vulnerability."
+EFF03,literature,"Desire, care, separation and intimate detail."
+EFF03,video,"Relational action, performance and audiovisual treatment."
+EFF04,literature,"Discovery, scale or unexplained possibility."
+EFF04,video,"Reveal, scale, exploration or unusual sound/image."
+EFF05,literature,"Situated motives, vulnerability and lived constraints."
+EFF05,video,"Performance, access to experience and consequential choices."
+EFF06,literature,Contrasting choices and retrospective reinterpretation.
+EFF06,video,Juxtaposed outcomes or changed responses invite reflection.
+EFF07,literature,"Awkward exchanges, exposure and withheld responses."
+EFF07,video,"Pauses, performance and reactions mark social tension."

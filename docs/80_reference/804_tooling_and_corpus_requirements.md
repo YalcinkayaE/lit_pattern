@@ -16,19 +16,21 @@ related:
 
 # Tooling and Corpus Requirements
 
-This is a decision reference, not an installation record. None of the optional
-packages or annotation applications has been installed or evaluated here.
+This is a decision reference. The file pipeline now uses jsonschema 4.26.0,
+pinned with referencing 0.37.0 in `requirements.txt`, with standard-library unittest for its tests.
+Other packages and annotation platforms below remain candidates; no annotation
+platform integration has been implemented.
 
 ## Minimum local tooling
 
 - Python 3.11 or later for generators, validation, and agreement analysis.
 - Python standard library for the current codebook generator.
+- jsonschema 4.26.0 for pipeline configuration and annotation JSON Schema checks.
 - SQLite, normally bundled with Python, for the first relational store.
 - Git for source and schema history.
 
 Add dependencies only when their tests and import path exist:
 
-- `jsonschema` for annotation validation;
 - `pytest` for conformance tests;
 - `pandas` or DuckDB for exploratory tabular analysis;
 - `scikit-learn`, `statsmodels`, `krippendorff`, or another reviewed implementation

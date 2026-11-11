@@ -4,30 +4,47 @@
 
 ## Reviewed entrypoints
 
-- **REPO_CONTRACT.md**. Start here for scope, authority, vocabulary, source checksum, verification limits, and update rules. ([`REPO_CONTRACT.md:16`](../../../REPO_CONTRACT.md#L16))
-- **literary_and_video_patterns.csv**. Current source vocabulary, including criteria, media indicators, related-pattern notation, and source-workbook mappings. ([`literary_and_video_patterns.csv:1`](../../../literary_and_video_patterns.csv#L1))
-- **CODEBOOK.md**. Readable generated coding manual; edit the CSV and regenerate rather than editing this output. ([`CODEBOOK.md:19`](../../../CODEBOOK.md#L19))
-- **Codebook CLI**. `python3 scripts/generate_codebook.py --check` compares CODEBOOK.md against rendered source data. Omitting --check writes CODEBOOK.md. These commands are documented and statically traced here, not executed during atlas creation. ([`scripts/generate_codebook.py:216`](../../../scripts/generate_codebook.py#L216), [`scripts/generate_codebook.py:228`](../../../scripts/generate_codebook.py#L228), [`scripts/generate_codebook.py:236`](../../../scripts/generate_codebook.py#L236))
-- **PILOT.md**. Proposed mixed-media validation study and status gates; no corpus, recruited annotators, or agreement result is recorded by this protocol. ([`PILOT.md:20`](../../../PILOT.md#L20))
+- **REPO_CONTRACT.md**. Read for authority, source preservation, current tooling, verification limits, and open semantic/pilot work. ([`REPO_CONTRACT.md:16`](../../../REPO_CONTRACT.md#L16))
+- **Source CSV and codebook**. Current proposed definitions and original workbook mappings; CODEBOOK.md is its generated readable view. ([`literary_and_video_patterns.csv:1`](../../../literary_and_video_patterns.csv#L1), [`CODEBOOK.md:19`](../../../CODEBOOK.md#L19))
+- **Codebook CLI**. Generate or check the codebook using `python3 scripts/generate_codebook.py` and `--check`. ([`scripts/generate_codebook.py:216`](../../../scripts/generate_codebook.py#L216))
+- **Normalisation CLI**. Run `python3 -m lit_pattern.normalise --config config/pipeline.json --output data/normalised`; add --check for exact freshness validation. ([`lit_pattern/normalise.py:187`](../../../lit_pattern/normalise.py#L187), [`lit_pattern/normalise.py:63`](../../../lit_pattern/normalise.py#L63), [`lit_pattern/normalise.py:146`](../../../lit_pattern/normalise.py#L146))
+- **Annotation validator CLI**. Run `python3 -m lit_pattern.validate --config config/pipeline.json --catalogue data/normalised --input <bundle.json>` to report structural and cross-record errors. ([`lit_pattern/validate.py:224`](../../../lit_pattern/validate.py#L224), [`lit_pattern/validate.py:40`](../../../lit_pattern/validate.py#L40))
+- **docs/30_design/304_annotation_file_contract.md**. Read the executable proposed format, command examples, extraction tables, evidence rules, and limitations. ([`docs/30_design/304_annotation_file_contract.md:14`](../../30_design/304_annotation_file_contract.md#L14))
+- **Tests and conformance fixtures**. Run `python3 -m unittest discover -s tests -v`; fixtures are invented conformance data, not annotations from a pilot. ([`README.md:89`](../../../README.md#L89), [`tests/fixtures/annotation_cases.json:3`](../../../tests/fixtures/annotation_cases.json#L3))
 
 ## Directory inventory
 
-Files by extension: Python (1).
+Files by extension: Python (7).
 
-Indexed 25 files. Directory display depth is 3.
+Indexed 56 files. Directory display depth is 3.
 
-- [`docs`](../..) (14 files in subtree)
+- [`config`](../../../config) (1 files in subtree)
+- [`data`](../../../data) (13 files in subtree)
+  - [`data/normalised`](../../../data/normalised) (13 files in subtree)
+- [`docs`](../..) (17 files in subtree)
   - [`docs/00_control`](../../00_control) (2 files in subtree)
   - [`docs/10_product`](../../10_product) (3 files in subtree)
   - [`docs/20_requirements`](../../20_requirements) (1 files in subtree)
-  - [`docs/30_design`](../../30_design) (3 files in subtree)
-  - [`docs/40_delivery`](../../40_delivery) (1 files in subtree)
-  - [`docs/50_verification`](../../50_verification) (1 files in subtree)
+  - [`docs/30_design`](../../30_design) (4 files in subtree)
+  - [`docs/40_delivery`](../../40_delivery) (2 files in subtree)
+  - [`docs/50_verification`](../../50_verification) (2 files in subtree)
   - [`docs/80_reference`](..) (3 files in subtree)
+- [`lit_pattern`](../../../lit_pattern) (4 files in subtree)
+- [`schemas`](../../../schemas) (2 files in subtree)
 - [`scripts`](../../../scripts) (1 files in subtree)
+- [`tests`](../../../tests) (6 files in subtree)
+  - [`tests/fixtures`](../../../tests/fixtures) (4 files in subtree)
 
-Root files: [`.gitignore`](../../../.gitignore), [`AGENTS.md`](../../../AGENTS.md), [`CHANGELOG.md`](../../../CHANGELOG.md), [`CODEBOOK.md`](../../../CODEBOOK.md), [`CONTRIBUTING.md`](../../../CONTRIBUTING.md), [`LICENSE`](../../../LICENSE), [`PILOT.md`](../../../PILOT.md), [`README.md`](../../../README.md), [`REPO_CONTRACT.md`](../../../REPO_CONTRACT.md), [`literary_and_video_patterns.csv`](../../../literary_and_video_patterns.csv).
+Root files: [`.gitattributes`](../../../.gitattributes), [`.gitignore`](../../../.gitignore), [`AGENTS.md`](../../../AGENTS.md), [`CHANGELOG.md`](../../../CHANGELOG.md), [`CODEBOOK.md`](../../../CODEBOOK.md), [`CONTRIBUTING.md`](../../../CONTRIBUTING.md), [`LICENSE`](../../../LICENSE), [`PILOT.md`](../../../PILOT.md), [`README.md`](../../../README.md), [`REPO_CONTRACT.md`](../../../REPO_CONTRACT.md), [`literary_and_video_patterns.csv`](../../../literary_and_video_patterns.csv), [`requirements.txt`](../../../requirements.txt).
+
+## Build, configuration, and CI
+
+- [`requirements.txt`](../../../requirements.txt): `Python dependencies`
 
 ## Static launch candidates
 
+- [`lit_pattern/normalise.py`](../../../lit_pattern/normalise.py): `Python main guard` · `normalise.py`
+- [`lit_pattern/validate.py`](../../../lit_pattern/validate.py): `Python main guard` · `validate.py`
 - [`scripts/generate_codebook.py`](../../../scripts/generate_codebook.py): `Python main guard` · `generate_codebook.py`
+- [`tests/test_annotations.py`](../../../tests/test_annotations.py): `Python main guard` · `test_annotations.py`
+- [`tests/test_normalise.py`](../../../tests/test_normalise.py): `Python main guard` · `test_normalise.py`

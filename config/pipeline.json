@@ -1,0 +1,148 @@
+{
+  "normalisation_version": "0.1.0",
+  "schema_version": "0.1.0",
+  "validator_version": "0.1.0",
+  "source": "../literary_and_video_patterns.csv",
+  "source_sha256": "a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d",
+  "annotation_schema": "../schemas/annotation.schema.json",
+  "pattern_version": "source-a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d",
+  "required_fields": [
+    "pattern_id",
+    "label_type",
+    "label",
+    "definition",
+    "inclusion_criteria",
+    "exclusion_criteria",
+    "analysis_unit",
+    "literature_indicators",
+    "video_indicators",
+    "invented_example",
+    "related_patterns",
+    "original_workbook_mapping",
+    "evidence_required",
+    "annotation_rule",
+    "sequence_recording",
+    "creative_use",
+    "interpretation_boundary",
+    "status"
+  ],
+  "label_types": [
+    "audiovisual_expression",
+    "genre",
+    "interpreted_effect",
+    "mode",
+    "narrative_arc",
+    "narrative_form",
+    "narrative_function",
+    "narrative_perspective",
+    "narrative_structure",
+    "rhetorical_device",
+    "speech_act",
+    "thematic_relation",
+    "worldbuilding"
+  ],
+  "unit_types": [
+    "work",
+    "chapter",
+    "scene",
+    "passage",
+    "sequence"
+  ],
+  "status_mapping": {
+    "Proposed; not yet validated on a labelled corpus": "proposed"
+  },
+  "relation_types": {
+    "contrasts_with": true,
+    "co_occurs_with": true,
+    "commonly_confused_with": true,
+    "prerequisite_for": false,
+    "subtype_of": false,
+    "analogue_in_other_media": false,
+    "extends": false
+  },
+  "relation_decisions": [],
+  "pattern_rules": {
+    "STR05": {
+      "roles": [
+        "cue",
+        "later_event"
+      ],
+      "min_locators": 2,
+      "min_events": 2,
+      "connection": false,
+      "knowledge": false,
+      "ordered_roles": [
+        "cue",
+        "later_event"
+      ],
+      "event_roles": [
+        "cue",
+        "later_event"
+      ]
+    },
+    "STR09": {
+      "roles": [
+        "setup",
+        "payoff"
+      ],
+      "min_locators": 2,
+      "min_events": 2,
+      "connection": true,
+      "knowledge": false,
+      "ordered_roles": [
+        "setup",
+        "payoff"
+      ],
+      "event_roles": [
+        "setup",
+        "payoff"
+      ]
+    },
+    "STR06": {
+      "roles": [
+        "misleading_cue",
+        "invited_inference",
+        "corrective_evidence"
+      ],
+      "min_locators": 2,
+      "min_events": 2,
+      "connection": false,
+      "knowledge": false,
+      "ordered_roles": [
+        "misleading_cue",
+        "corrective_evidence"
+      ],
+      "event_roles": [
+        "misleading_cue",
+        "corrective_evidence"
+      ]
+    },
+    "STR07": {
+      "roles": [
+        "claim",
+        "disconfirming_evidence"
+      ],
+      "min_locators": 2,
+      "min_events": 2,
+      "connection": false,
+      "knowledge": false,
+      "ordered_roles": [],
+      "event_roles": [
+        "claim",
+        "disconfirming_evidence"
+      ]
+    },
+    "STR10": {
+      "roles": [
+        "knowledge_state"
+      ],
+      "min_locators": 1,
+      "min_events": 0,
+      "connection": false,
+      "knowledge": true,
+      "ordered_roles": [],
+      "event_roles": []
+    }
+  },
+  "pattern_id_pattern": "^(GEN|ARC|FORM|MODE|DEV|STR|WORLD|FUN|VID|EFF)[0-9]{2}$"
+}

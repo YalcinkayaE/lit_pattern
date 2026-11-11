@@ -28,9 +28,12 @@ related:
 | DOC-301 | `docs/30_design/301_normalised_data_model.md` | Proposed relational structure | Controlled | Proposed |
 | DOC-302 | `docs/30_design/302_annotation_workflow.md` | Proposed annotation and review workflow | Controlled | Proposed |
 | DOC-303 | `docs/30_design/303_boundary_matrices.md` | Pairwise disambiguation and decision rules | Controlled | Proposed |
+| DOC-304 | `docs/30_design/304_annotation_file_contract.md` | Executable proposed file contract, commands, and boundaries | Controlled | Living |
 | DOC-401 | `docs/40_delivery/401_implementation_plan.md` | Controlled implementation sequence | Controlled | Proposed |
+| DOC-402 | `docs/40_delivery/402_data_pipeline_implementation.md` | Data pipeline implementation decisions and execution plan | Controlled | Living |
 | DOC-501 | `PILOT.md` | Proposed first validation study | Controlled | Proposed |
 | DOC-502 | `docs/50_verification/501_schema_validation_plan.md` | Planned schema and workflow checks | Controlled | Proposed |
+| DOC-503 | `docs/50_verification/502_data_pipeline_verification.md` | File pipeline conformance evidence and remaining gaps | Evidence | Dated |
 | DOC-801 | `docs/80_reference/801_glossary.md` | Shared working vocabulary | Informative | Living |
 | DOC-802 | `docs/80_reference/802_design_proposal_provenance.md` | Source and limitations of the AI-generated proposal | Informative | Reference |
 | DOC-804 | `docs/80_reference/804_tooling_and_corpus_requirements.md` | Candidate tools, standards, and corpus needs | Informative | Reference |

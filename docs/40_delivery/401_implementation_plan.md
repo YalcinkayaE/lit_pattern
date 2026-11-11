@@ -51,7 +51,13 @@ remote branch SHA, and exact comparison of the hosted licence file.
 
 ## Phase 1: Normalisation
 
-Status: proposed.
+Status: deterministic extraction implemented; semantic review incomplete.
+
+The implemented pipeline preserves the exact source, separates core patterns,
+units, examples, and shared rules, and retains unresolved indicator groups,
+relation candidates, and mapping cells in a review queue. Fully reviewed
+operational normalisation remains open. See
+[the implementation plan](402_data_pipeline_implementation.md).
 
 - Create deterministic extraction scripts.
 - Generate lookup tables and a normalised `pattern.csv`.
@@ -64,7 +70,11 @@ review of every transformation.
 
 ## Phase 2: Annotation contract
 
-Status: proposed.
+Status: proposed file contract implemented and covered by conformance tests;
+pilot review remains open. JSON Schema and Python checks cover the initial
+bundle format, reference integrity, absence inspection, linked sequence
+evidence, and knowledge-state records. SQL and persistent status history are
+deferred. See [the file contract](../30_design/304_annotation_file_contract.md).
 
 - Define SQL DDL or JSON Schema.
 - Define required evidence and sequence objects.

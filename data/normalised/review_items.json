@@ -1,0 +1,1890 @@
+[
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN02"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN02"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN02"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN02"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN02"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN02"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN03"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN03"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN03"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN03"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN03"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN03"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN04"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN04"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN04"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN04"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN04"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN04"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN05"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN05"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN05"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN05"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN05"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN05"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN06"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN06"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN06"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN06"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN06"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN06"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN07"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN07"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN07"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN07"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN07"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN07"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN08"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN08"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN08"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN08"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN08"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN08"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN09"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN09"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN09"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN09"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN09"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN09"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN10"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "GEN10"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN10"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN10"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN10"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "GEN10"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "ARC01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "ARC01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FORM01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FORM01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FORM01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FORM01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FORM01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FORM01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "MODE01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "MODE01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "MODE01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "MODE01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "MODE01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "MODE01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "MODE02"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "MODE02"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "MODE02"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "MODE02"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "MODE02"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "MODE02"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV02"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV02"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV02"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV02"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV02"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV02"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV03"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV03"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV03"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV03"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV03"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV03"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV04"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV04"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV04"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV04"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV04"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV04"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV05"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV05"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV05"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV05"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV05"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV05"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV06"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV06"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV06"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV06"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV06"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV06"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV07"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV07"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV07"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV07"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV07"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV07"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV08"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV08"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV08"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV08"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV08"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV08"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV09"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV09"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV09"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV09"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV09"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV09"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV10"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV10"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV10"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV10"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV10"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV10"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV11"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "DEV11"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV11"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV11"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV11"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "DEV11"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR02"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR02"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR02"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR02"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR02"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR02"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR03"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR03"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR03"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR03"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR03"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR03"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR04"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR04"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR04"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR04"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR04"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR04"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR05"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR05"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR05"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR05"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR05"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR05"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR06"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR06"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR06"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR06"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR06"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR06"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR07"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR07"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR07"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR07"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR07"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR07"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR08"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR08"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR08"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR08"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR08"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR08"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR09"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR09"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR09"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR09"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR09"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR09"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR10"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "STR10"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR10"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR10"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR10"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "STR10"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "ARC02"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "ARC02"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC02"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC02"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC02"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC02"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "ARC03"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "ARC03"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC03"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC03"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC03"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "ARC03"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "WORLD01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "WORLD01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "WORLD01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "WORLD01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "WORLD01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "WORLD01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "WORLD02"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "WORLD02"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "WORLD02"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "WORLD02"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "WORLD02"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "WORLD02"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN02"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN02"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN02"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN02"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN02"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN02"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN03"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN03"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN03"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN03"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN03"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN03"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN04"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN04"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN04"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN04"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN04"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN04"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN05"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "FUN05"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN05"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN05"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN05"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "FUN05"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID02"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID02"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID02"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID02"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID02"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID02"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID03"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID03"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID03"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID03"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID03"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID03"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID04"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID04"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID04"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID04"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID04"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID04"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID05"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID05"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID05"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID05"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID05"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID05"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID06"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID06"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID06"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID06"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID06"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID06"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID07"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID07"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID07"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID07"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID07"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID07"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID08"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "VID08"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID08"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID08"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID08"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "VID08"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF01"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF01"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF01"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF01"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF01"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF01"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF02"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF02"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF02"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF02"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF02"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF02"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF03"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF03"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF03"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF03"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF03"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF03"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF04"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF04"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF04"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF04"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF04"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF04"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF05"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF05"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF05"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF05"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF05"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF05"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF06"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF06"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF06"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF06"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF06"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF06"
+  },
+  {
+    "field": "literature_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF07"
+  },
+  {
+    "field": "video_indicators",
+    "kind": "indicator_segmentation",
+    "message": "Preserved complete source cell; discrete indicator boundaries need review.",
+    "pattern_id": "EFF07"
+  },
+  {
+    "kind": "relation_typing",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF07"
+  },
+  {
+    "kind": "workbook_mapping_rationale",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF07"
+  },
+  {
+    "kind": "common_false_positive",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF07"
+  },
+  {
+    "kind": "evidential_threshold",
+    "message": "Requires an explicit reviewed decision; not inferred from source prose.",
+    "pattern_id": "EFF07"
+  }
+]

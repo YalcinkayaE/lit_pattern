@@ -19,8 +19,11 @@ related:
 
 ## Purpose
 
-The plan defines what future validation must establish. No JSON Schema,
-database schema, validator, or conformance suite exists yet.
+The plan defines the intended verification scope. JSON Schema and a Python
+validator now enforce the initial file contract with conformance tests. See
+[the verification record](502_data_pipeline_verification.md) for commands and
+coverage. Database schema checks and persistent status-history enforcement
+remain future work.
 
 ## Structural checks
 
