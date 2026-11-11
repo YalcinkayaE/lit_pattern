@@ -145,6 +145,20 @@
         }
       ],
       "name": "Tests and conformance fixtures"
+    },
+    {
+      "name": "Repository test plan",
+      "text": "DOC-504 maps current test assertions, missing boundary cases, execution environments, reporting, and proposed pre-merge/rehearsal/pilot gates. It separates planned coverage from observed results.",
+      "sources": [
+        {
+          "path": "docs/50_verification/503_repository_test_plan.md",
+          "anchor": "# Repository Test Plan"
+        },
+        {
+          "path": "docs/50_verification/503_repository_test_plan.md",
+          "anchor": "## Current implementation test matrix"
+        }
+      ]
     }
   ],
   "modules": [

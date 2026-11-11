@@ -10,24 +10,25 @@
 - **Normalisation CLI**. Run `python3 -m lit_pattern.normalise --config config/pipeline.json --output data/normalised`; add --check for exact freshness validation. ([`lit_pattern/normalise.py:187`](../../../lit_pattern/normalise.py#L187), [`lit_pattern/normalise.py:63`](../../../lit_pattern/normalise.py#L63), [`lit_pattern/normalise.py:146`](../../../lit_pattern/normalise.py#L146))
 - **Annotation validator CLI**. Run `python3 -m lit_pattern.validate --config config/pipeline.json --catalogue data/normalised --input <bundle.json>` to report structural and cross-record errors. ([`lit_pattern/validate.py:224`](../../../lit_pattern/validate.py#L224), [`lit_pattern/validate.py:40`](../../../lit_pattern/validate.py#L40))
 - **docs/30_design/304_annotation_file_contract.md**. Read the executable proposed format, command examples, extraction tables, evidence rules, and limitations. ([`docs/30_design/304_annotation_file_contract.md:14`](../../30_design/304_annotation_file_contract.md#L14))
-- **Tests and conformance fixtures**. Run `python3 -m unittest discover -s tests -v`; fixtures are invented conformance data, not annotations from a pilot. ([`README.md:90`](../../../README.md#L90), [`tests/fixtures/annotation_cases.json:3`](../../../tests/fixtures/annotation_cases.json#L3))
+- **Tests and conformance fixtures**. Run `python3 -m unittest discover -s tests -v`; fixtures are invented conformance data, not annotations from a pilot. ([`README.md:91`](../../../README.md#L91), [`tests/fixtures/annotation_cases.json:3`](../../../tests/fixtures/annotation_cases.json#L3))
+- **Repository test plan**. DOC-504 maps current test assertions, missing boundary cases, execution environments, reporting, and proposed pre-merge/rehearsal/pilot gates. It separates planned coverage from observed results. ([`docs/50_verification/503_repository_test_plan.md:21`](../../50_verification/503_repository_test_plan.md#L21), [`docs/50_verification/503_repository_test_plan.md:103`](../../50_verification/503_repository_test_plan.md#L103))
 
 ## Directory inventory
 
 Files by extension: Python (7).
 
-Indexed 57 files. Directory display depth is 3.
+Indexed 58 files. Directory display depth is 3.
 
 - [`config`](../../../config) (1 files in subtree)
 - [`data`](../../../data) (13 files in subtree)
   - [`data/normalised`](../../../data/normalised) (13 files in subtree)
-- [`docs`](../..) (18 files in subtree)
+- [`docs`](../..) (19 files in subtree)
   - [`docs/00_control`](../../00_control) (2 files in subtree)
   - [`docs/10_product`](../../10_product) (3 files in subtree)
   - [`docs/20_requirements`](../../20_requirements) (1 files in subtree)
   - [`docs/30_design`](../../30_design) (4 files in subtree)
   - [`docs/40_delivery`](../../40_delivery) (3 files in subtree)
-  - [`docs/50_verification`](../../50_verification) (2 files in subtree)
+  - [`docs/50_verification`](../../50_verification) (3 files in subtree)
   - [`docs/80_reference`](..) (3 files in subtree)
 - [`lit_pattern`](../../../lit_pattern) (4 files in subtree)
 - [`schemas`](../../../schemas) (2 files in subtree)

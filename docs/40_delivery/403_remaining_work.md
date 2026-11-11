@@ -41,6 +41,10 @@ this checklist. Keep unresolved cases and decisions visible.
 
 ## Integrate and verify the implementation
 
+Execute and record verification using the
+[repository test plan](../50_verification/503_repository_test_plan.md). Its
+coverage matrix separates current assertions from missing and future cases.
+
 - [ ] Review PR 1 against the contract, file format, and recorded verification;
   record the disposition of any further findings.
 - [ ] Exercise the declared minimum Python 3.11 in a fresh environment. Record

@@ -35,6 +35,7 @@ related:
 | DOC-501 | `PILOT.md` | Proposed first validation study | Controlled | Proposed |
 | DOC-502 | `docs/50_verification/501_schema_validation_plan.md` | Planned schema and workflow checks | Controlled | Proposed |
 | DOC-503 | `docs/50_verification/502_data_pipeline_verification.md` | File pipeline conformance evidence and remaining gaps | Evidence | Dated |
+| DOC-504 | `docs/50_verification/503_repository_test_plan.md` | Test scope, coverage gaps, run procedure and proposed gates | Controlled | Living |
 | DOC-801 | `docs/80_reference/801_glossary.md` | Shared working vocabulary | Informative | Living |
 | DOC-802 | `docs/80_reference/802_design_proposal_provenance.md` | Source and limitations of the AI-generated proposal | Informative | Reference |
 | DOC-804 | `docs/80_reference/804_tooling_and_corpus_requirements.md` | Candidate tools, standards, and corpus needs | Informative | Reference |

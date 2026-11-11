@@ -56,6 +56,7 @@ audiovisual expression, interpreted effects, and related label types.
 | Delivery plan | [`docs/40_delivery/401_implementation_plan.md`](docs/40_delivery/401_implementation_plan.md) |
 | Pilot | [`PILOT.md`](PILOT.md) |
 | Verification plan | [`docs/50_verification/501_schema_validation_plan.md`](docs/50_verification/501_schema_validation_plan.md) |
+| Repository test plan | [`docs/50_verification/503_repository_test_plan.md`](docs/50_verification/503_repository_test_plan.md) |
 | Data pipeline verification | [`docs/50_verification/502_data_pipeline_verification.md`](docs/50_verification/502_data_pipeline_verification.md) |
 | Provenance | [`docs/80_reference/802_design_proposal_provenance.md`](docs/80_reference/802_design_proposal_provenance.md) |
 | Tool and corpus requirements | [`docs/80_reference/804_tooling_and_corpus_requirements.md`](docs/80_reference/804_tooling_and_corpus_requirements.md) |

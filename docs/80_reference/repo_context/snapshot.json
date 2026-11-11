@@ -6,17 +6,18 @@
     "CODEBOOK.md": "cf3c24b7ae7331f9d89ffb6d8ae7ce80415a056913e51ffc63ef4067cbe26eb5",
     "CONTRIBUTING.md": "17ccb94c6e56059730a40e31818f3091bbbdb2c720aaa65c3ee662fb34fad368",
     "PILOT.md": "7d5287a70fd23fbf27595c4cd6984e183a123f010e802cc8e5f66278383e1a8c",
-    "README.md": "b9ccd5caa47d4b1ef4ba7a966fe0d0f279b87496fcaa977fd13b891e542b66d2",
+    "README.md": "ddb08cef4a5bd8aaa47a390d982cfdb74ca16608a20cd737ce7bac129e4acc0a",
     "REPO_CONTRACT.md": "417a96c2d9356910f78cd810607bef2bd2f055747b79b22d6d76ad7b73a52690",
     "config/pipeline.json": "5a585328f80cf5b09fdf9389dbab3ac07728b18a50e983ac9c887eab366c3a89",
     "docs/00_control/002_repo_status.md": "f6f7e829502ef2a5afad282b2eddd17aebe232b74cf860420da38c28e5df9d89",
-    "docs/00_control/003_document_register.md": "a45b8b179ec4ad1924ab05b22a91f349b82369acfb28359067c783483c0a314d",
+    "docs/00_control/003_document_register.md": "e3ac68e80a56d85be7065611c921f74b04daa18cb68e917c134645cbde721a59",
     "docs/10_product/102_use_cases.md": "f2aaa296179d85683e7c2af8c07c3352d4ff25c35e031b0565a9a1aa8c4af423",
     "docs/30_design/301_normalised_data_model.md": "9ff3c111d8b3b40b7f0130c9e6057d5ef2e3adac24dd676609e7eeb2862c903d",
     "docs/30_design/303_boundary_matrices.md": "dfc14b99dbad23ec5895dafa2d47c4c2367c54fcca0a2bd514858a0b0f44052d",
     "docs/30_design/304_annotation_file_contract.md": "8beec22e18eed653710a7d8a9175895e09e281b6278cd3fb20e355ddab1899d9",
-    "docs/40_delivery/403_remaining_work.md": "eb8a2d05439858a6cf543323798f59fa6ba15b075208038eb6a3b51cb664b417",
+    "docs/40_delivery/403_remaining_work.md": "9b97a1604cc64f6af82451bcb61d0c84757cacfac7ef5688329aedcd14788b5c",
     "docs/50_verification/502_data_pipeline_verification.md": "e983ff50ef6c68bc87c75525d9181b86b38f0f59949fccd1e1bf01f3e505ac0c",
+    "docs/50_verification/503_repository_test_plan.md": "af4a7bfb50e7632ef2b233f6fe1a732549197c70618ee7b5104441c0e5c0ee5a",
     "docs/80_reference/804_tooling_and_corpus_requirements.md": "ce750d63cc4aa89f09b77799f3d3bee509142de8db7715edc565cde5919d2723",
     "lit_pattern/common.py": "4fb029b4a8f813489e78130694f8aa69a673c080f4cf9beac9b21bd0d6361bf6",
     "lit_pattern/normalise.py": "44107917408d7a29964930f63e60660ea8eca6bbc10dab1a42b9a4da401a8944",
@@ -63,7 +64,7 @@
         "languages": {}
       },
       "docs": {
-        "files": 18,
+        "files": 19,
         "languages": {}
       },
       "docs/00_control": {
@@ -87,7 +88,7 @@
         "languages": {}
       },
       "docs/50_verification": {
-        "files": 2,
+        "files": 3,
         "languages": {}
       },
       "docs/80_reference": {
@@ -153,12 +154,12 @@
         ""
       ]
     ],
-    "file_count": 57,
+    "file_count": 58,
     "languages": {
       "Python": 7
     },
     "nested_repositories": [],
-    "path_sha256": "64360c566159cdcaa869aa325b9719aa3b7ca8e0e2d47fe6b44336f19f84984b",
+    "path_sha256": "0bfc0ec96874ec452d8b9b134effbe3e12b65cfe8d7df35201fecfc02ce692da",
     "root_files": [
       ".gitattributes",
       ".gitignore",

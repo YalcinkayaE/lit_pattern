@@ -25,6 +25,10 @@ validator now enforce the initial file contract with conformance tests. See
 coverage. Database schema checks and persistent status-history enforcement
 remain future work.
 
+[DOC-504](503_repository_test_plan.md) maps these expectations to the current
+tests, missing cases, execution environments, and proposed delivery gates.
+It is a plan; DOC-503 remains the record of earlier observed results.
+
 ## Structural checks
 
 - CSV parses without duplicate headers.
