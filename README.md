@@ -4,8 +4,9 @@ This repository holds a proposed pattern vocabulary and coding manual for
 literary and audiovisual analysis. It is documentation-first. The current
 definitions have not been validated on a labelled corpus.
 
-The repository is intended for public distribution. Its software is MIT licensed
-and its original taxonomy and documentation content are CC BY 4.0 licensed.
+The public repository is [YalcinkayaE/lit_pattern](https://github.com/YalcinkayaE/lit_pattern).
+Its software is MIT licensed and its original taxonomy and documentation content
+are CC BY 4.0 licensed.
 
 The current source vocabulary is
 [`literary_and_video_patterns.csv`](literary_and_video_patterns.csv). It contains
@@ -72,12 +73,11 @@ These checks establish file consistency. They do not validate the taxonomy.
 
 ## Immediate next work
 
-1. Configure the public Git remote and publish the initial repository.
-2. Normalise the source CSV into separate patterns, indicators, examples,
+1. Normalise the source CSV into separate patterns, indicators, examples,
    relations, mappings, and evidence-rule tables.
-3. Add a schema, validator, and conformance tests.
-4. Prepare a small mixed-media pilot with located cases.
-5. Run independent annotation and record the observed disagreements before
+2. Add a schema, validator, and conformance tests.
+3. Prepare a small mixed-media pilot with located cases.
+4. Run independent annotation and record the observed disagreements before
    changing any pattern definition.
 
 ## Licence

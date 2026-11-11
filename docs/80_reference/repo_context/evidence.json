@@ -452,7 +452,7 @@
       "name": "Candidate annotation platforms"
     },
     {
-      "text": "Git is documented for source and schema history. No remote publication or hosted integration was checked while building this offline atlas; publication steps in delivery documents are plans rather than observed remote state.",
+      "text": "Git is documented for source and schema history. The repository status records public publication at YalcinkayaE/lit_pattern on 2026-11-11 and hosted README/licence checks; the delivery plan records the publication evidence. GitHub publication is separate from any future runtime integration.",
       "sources": [
         {
           "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
@@ -461,6 +461,10 @@
         {
           "path": "docs/40_delivery/401_implementation_plan.md",
           "anchor": "## Phase 0a: Public publication"
+        },
+        {
+          "path": "docs/00_control/002_repo_status.md",
+          "anchor": "- Published on 2026-11-11 at"
         }
       ],
       "name": "Version control and publication boundary"
@@ -578,7 +582,7 @@
       ]
     },
     {
-      "text": "Check the repository status and implementation plan for open work, including owner contact metadata. Treat remote-publication lines as documented plans; this local-only atlas does not verify public visibility.",
+      "text": "Check the repository status and implementation plan for publication evidence and open work: normalisation, annotation-contract implementation, conformance checks, pilot cases, and unresolved owner contact metadata. Public publication is recorded; empirical pilot work remains unimplemented.",
       "sources": [
         {
           "path": "docs/00_control/002_repo_status.md",

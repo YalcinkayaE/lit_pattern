@@ -36,14 +36,18 @@ still needs a supplied value before the control phase is fully complete.
 
 ## Phase 0a: Public publication
 
-Status: ready for remote configuration; not published.
+Status: published on 2026-11-11.
 
-- Configure a public Git remote under the confirmed owner account.
-- Push the initial commit.
-- Verify public visibility and licence rendering after publication.
+- Public repository: [YalcinkayaE/lit_pattern](https://github.com/YalcinkayaE/lit_pattern).
+- `origin` is configured and local `main` tracks `origin/main`.
+- Initial history and documentation update `e7dc049` were pushed.
+- GitHub API reports public visibility and default branch `main`.
+- The hosted README includes the use-case and atlas links and the licence split.
+- The hosted `LICENSE` matches the local combined licence text. GitHub automatic
+  licence classification reports `NOASSERTION`.
 
-Exit evidence: a verified public repository URL and observed render of the
-README and licence files.
+Exit evidence recorded above: repository metadata, hosted README rendering,
+remote branch SHA, and exact comparison of the hosted licence file.
 
 ## Phase 1: Normalisation
 

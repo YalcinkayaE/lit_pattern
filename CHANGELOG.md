@@ -17,6 +17,8 @@ editorial changes.
 - Pilot and schema-validation plans.
 - Provenance and external-reference notes.
 - Contributing and licensing documents.
+- Repository atlas, agent onboarding guide, and concrete use cases.
+- Public repository at [YalcinkayaE/lit_pattern](https://github.com/YalcinkayaE/lit_pattern).
 
 ### Verified
 
@@ -24,6 +26,10 @@ editorial changes.
   unique pattern IDs.
 - The source CSV SHA-256 is recorded in the repository contract.
 - The generated codebook can be checked against the source CSV.
+- Repository-atlas freshness and local documentation links pass their checks.
+- GitHub reports public visibility and default branch `main`; the published
+  README includes use-case and atlas links. The hosted licence file matches
+  the local MIT and CC BY 4.0 text.
 
 ### Not done
 
@@ -35,5 +41,4 @@ editorial changes.
 - No pilot has been run.
 - No pattern has been validated.
 - Repository owner contact metadata remains unresolved.
-- No public Git remote has been configured or pushed.
 

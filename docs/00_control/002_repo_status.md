@@ -29,6 +29,13 @@ not evidence that the proposed functionality exists.
 - Every row has status `Proposed; not yet validated on a labelled corpus`.
 - Public distribution and the MIT and CC BY 4.0 licence split were confirmed by
   the repository owner on 2026-11-11.
+- Published on 2026-11-11 at
+  [YalcinkayaE/lit_pattern](https://github.com/YalcinkayaE/lit_pattern).
+- GitHub reports public visibility and `main` as the default branch. The local
+  `origin` points to that repository and `main` tracks `origin/main`.
+- The hosted README includes the use-case and repository-atlas links. The hosted
+  `LICENSE` matches the local MIT and CC BY 4.0 text; GitHub reports
+  `NOASSERTION` for automatic classification of the combined licence file.
 - The source SHA-256 is
   `a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d`.
 - Four source fields are identical across all 59 rows: `evidence_required`,
@@ -40,6 +47,8 @@ not evidence that the proposed functionality exists.
 - A codebook generator.
 - A generated `CODEBOOK.md`.
 - Proposed data, annotation, boundary, pilot, and validation plans.
+- Evidence-backed repository atlas with a refresh and freshness-check helper.
+- Concrete use cases with current capabilities and future prerequisites separated.
 
 ## Not implemented
 
@@ -64,9 +73,9 @@ not evidence that the proposed functionality exists.
 
 ## Required next action
 
-Configure the public Git remote and publish the initial repository. Then
-normalise the source vocabulary without changing pattern meaning. After that,
-add conformance checks and prepare the pilot cases.
+Normalise the source vocabulary without changing pattern meaning. After that,
+implement the annotation contract, add conformance checks, and prepare the pilot
+cases.
 
 Repository-owner public contact metadata remains unresolved. It does not block
 publication of the current documentation set, but it should be recorded in the
