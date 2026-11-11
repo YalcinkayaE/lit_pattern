@@ -34,6 +34,7 @@ related:
 | DOC-801 | `docs/80_reference/801_glossary.md` | Shared working vocabulary | Informative | Living |
 | DOC-802 | `docs/80_reference/802_design_proposal_provenance.md` | Source and limitations of the AI-generated proposal | Informative | Reference |
 | DOC-804 | `docs/80_reference/804_tooling_and_corpus_requirements.md` | Candidate tools, standards, and corpus needs | Informative | Reference |
+| DOC-805 | `docs/80_reference/repo_context/README.md` | Repository atlas and agent onboarding navigation | Informative, generated | Living |
 | DOC-CONTRIB | `CONTRIBUTING.md` | Contribution, versioning, and review rules | Controlled | Living |
 | DOC-CHANGELOG | `CHANGELOG.md` | Material repository changes | Informative | Living |
 | DOC-LICENCE | `LICENSE` | Software and content licence terms | Authoritative | Living |
@@ -43,3 +44,10 @@ assistants expect it there. `README.md`, `AGENTS.md`, `CONTRIBUTING.md`,
 `CHANGELOG.md`, and `LICENSE` also remain at the root for discoverability and
 tool compatibility.
 
+
+The DOC-805 context pack is a generated navigation aid subordinate to this
+register and `REPO_CONTRACT.md`. Maintain its reviewed claims in
+`docs/80_reference/repo_context/evidence.json`, then regenerate its Markdown and
+snapshot with the copied `repo_context.py`. The pack has no separate authority
+over pattern definitions, implementation status, or validation decisions. Owner
+metadata remains unresolved as recorded in the repository contract.

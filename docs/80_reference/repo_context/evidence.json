@@ -1,0 +1,598 @@
+{
+  "schema": 1,
+  "exclude": [
+    "data/raw",
+    "data/private",
+    "reports/local",
+    "*.sqlite",
+    "*.sqlite3",
+    "*.db",
+    ".env",
+    ".env.*"
+  ],
+  "identity": [
+    {
+      "text": "lit_pattern is a documentation-first repository for a proposed literary and audiovisual pattern vocabulary and coding manual; there is no runtime application yet.",
+      "sources": [
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "Purpose: maintain a proposed, evidence-oriented pattern database and coding"
+        },
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "There is no runtime application yet."
+        }
+      ]
+    },
+    {
+      "text": "The source CSV owns current proposed definitions and workbook mappings; CODEBOOK.md is its generated human-readable view. Normalised tables, annotation validation, and empirical pilot results remain open work.",
+      "sources": [
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "2. `literary_and_video_patterns.csv` for the current proposed pattern labels,"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "anchor": "`CODEBOOK.md` is generated from that file and must not be edited by hand."
+        },
+        {
+          "path": "docs/00_control/002_repo_status.md",
+          "anchor": "## Not implemented"
+        }
+      ]
+    },
+    {
+      "text": "The implemented codebook generator uses Python standard-library modules. Python 3.11+ and SQLite describe the intended analysis toolchain; dependency versions are not selected.",
+      "sources": [
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "import argparse\nimport csv\nimport hashlib\nimport sys\nfrom pathlib import Path"
+        },
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "The intended analysis toolchain is Python 3.11 or later with SQLite"
+        }
+      ]
+    },
+    {
+      "text": "This atlas is an informative generated navigation aid. The repository contract, source CSV, and registered documents retain their authority order; owner contact metadata is unresolved.",
+      "sources": [
+        {
+          "path": "docs/00_control/003_document_register.md",
+          "anchor": "The DOC-805 context pack is a generated navigation aid subordinate to this"
+        },
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "## Authoritative sources"
+        },
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "- Record the repository owner's public contact identity."
+        }
+      ]
+    }
+  ],
+  "entrypoints": [
+    {
+      "text": "Start here for scope, authority, vocabulary, source checksum, verification limits, and update rules.",
+      "sources": [
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "# Repository Contract"
+        }
+      ],
+      "name": "REPO_CONTRACT.md"
+    },
+    {
+      "text": "Current source vocabulary, including criteria, media indicators, related-pattern notation, and source-workbook mappings.",
+      "sources": [
+        {
+          "path": "literary_and_video_patterns.csv",
+          "anchor": "pattern_id,label_type,label,definition,inclusion_criteria,exclusion_criteria,analysis_unit"
+        }
+      ],
+      "name": "literary_and_video_patterns.csv"
+    },
+    {
+      "text": "Readable generated coding manual; edit the CSV and regenerate rather than editing this output.",
+      "sources": [
+        {
+          "path": "CODEBOOK.md",
+          "anchor": "> Generated file. Edit `literary_and_video_patterns.csv`"
+        }
+      ],
+      "name": "CODEBOOK.md"
+    },
+    {
+      "text": "`python3 scripts/generate_codebook.py --check` compares CODEBOOK.md against rendered source data. Omitting --check writes CODEBOOK.md. These commands are documented and statically traced here, not executed during atlas creation.",
+      "sources": [
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "def main() -> int:"
+        },
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "if args.check:"
+        },
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "OUTPUT.write_text(rendered, encoding=\"utf-8\")"
+        }
+      ],
+      "name": "Codebook CLI"
+    },
+    {
+      "text": "Proposed mixed-media validation study and status gates; no corpus, recruited annotators, or agreement result is recorded by this protocol.",
+      "sources": [
+        {
+          "path": "PILOT.md",
+          "anchor": "This is a planned pilot. No annotator has been recruited"
+        }
+      ],
+      "name": "PILOT.md"
+    }
+  ],
+  "modules": [
+    {
+      "text": "REPO_CONTRACT.md governs identity and authority. AGENTS.md and CONTRIBUTING.md constrain changes; the document register locates controlled and informative documents. Governance changes require an explicit contract update.",
+      "sources": [
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "1. `REPO_CONTRACT.md` for repository identity, scope, authority, status, and"
+        },
+        {
+          "path": "AGENTS.md",
+          "anchor": "- Do not silently change repository identity, scope, source ordering, runtime"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "anchor": "update to `REPO_CONTRACT.md`."
+        },
+        {
+          "path": "docs/00_control/003_document_register.md",
+          "anchor": "# Document Register"
+        }
+      ],
+      "name": "Repository control"
+    },
+    {
+      "text": "The CSV is the input boundary. scripts/generate_codebook.py owns loading, basic required-field and ID checks, rendering, and drift detection. CODEBOOK.md is the output; generator changes must preserve the source authority.",
+      "sources": [
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "SOURCE = ROOT / \"literary_and_video_patterns.csv\""
+        },
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "OUTPUT = ROOT / \"CODEBOOK.md\""
+        },
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "def load_rows()"
+        },
+        {
+          "path": "CODEBOOK.md",
+          "anchor": "> Generated file. Edit `literary_and_video_patterns.csv`"
+        }
+      ],
+      "name": "Current source-to-codebook tooling"
+    },
+    {
+      "text": "docs/10_product owns intended users, use cases, scope, and source limitations. It describes product intent; definitions remain proposals requiring empirical testing.",
+      "sources": [
+        {
+          "path": "docs/10_product/101_product_overview.md",
+          "anchor": "## Intended outputs"
+        },
+        {
+          "path": "docs/10_product/103_scope_and_limitations.md",
+          "anchor": "## Known limitations in the source CSV"
+        }
+      ],
+      "name": "Product documentation"
+    },
+    {
+      "text": "docs/20_requirements defines proposed data obligations. docs/30_design proposes entities, annotation handoffs, and boundary decisions; it does not supply an implemented schema or validator.",
+      "sources": [
+        {
+          "path": "docs/20_requirements/201_data_requirements.md",
+          "anchor": "## DR-001: Preserve provenance"
+        },
+        {
+          "path": "docs/30_design/301_normalised_data_model.md",
+          "anchor": "This is a design proposal. No SQLite or PostgreSQL schema is implemented"
+        },
+        {
+          "path": "docs/30_design/302_annotation_workflow.md",
+          "anchor": "## 1. Register the work"
+        },
+        {
+          "path": "docs/30_design/303_boundary_matrices.md",
+          "anchor": "These matrices are proposed decision aids."
+        }
+      ],
+      "name": "Requirements and proposed design"
+    },
+    {
+      "text": "docs/40_delivery orders normalisation, annotation-contract implementation, pilot materials, independent coding, and revision. PILOT.md specifies the proposed study; docs/50_verification specifies future conformance checks, separate from taxonomy validation.",
+      "sources": [
+        {
+          "path": "docs/40_delivery/401_implementation_plan.md",
+          "anchor": "## Phase 1: Normalisation"
+        },
+        {
+          "path": "PILOT.md",
+          "anchor": "## Annotator sequence"
+        },
+        {
+          "path": "docs/50_verification/501_schema_validation_plan.md",
+          "anchor": "Schema verification is separate from taxonomy validation."
+        }
+      ],
+      "name": "Delivery and verification plans"
+    },
+    {
+      "text": "docs/80_reference provides glossary, design provenance, candidate tooling, and this atlas. The DeepSeek conversation is an informative proposal subordinate to the contract and original CSV.",
+      "sources": [
+        {
+          "path": "docs/00_control/003_document_register.md",
+          "anchor": "| DOC-801 |"
+        },
+        {
+          "path": "docs/80_reference/802_design_proposal_provenance.md",
+          "anchor": "The conversation is informative."
+        },
+        {
+          "path": "docs/00_control/003_document_register.md",
+          "anchor": "| DOC-805 |"
+        }
+      ],
+      "name": "Reference material"
+    },
+    {
+      "text": "Future corpora and private annotation records belong outside public version control. .gitignore excludes local raw/private data, local reports, databases, environments, and credentials; the original CSV and checksum must remain recoverable during normalisation.",
+      "sources": [
+        {
+          "path": "CONTRIBUTING.md",
+          "anchor": "Do not commit full copyrighted works, private corpora, participant data, secrets,"
+        },
+        {
+          "path": ".gitignore",
+          "anchor": "# Local data and analysis outputs"
+        },
+        {
+          "path": "docs/20_requirements/201_data_requirements.md",
+          "anchor": "The original source CSV and its checksum must remain recoverable after"
+        }
+      ],
+      "name": "Data and privacy boundary"
+    }
+  ],
+  "flows": [
+    {
+      "name": "Generate the codebook (static trace; not executed for this atlas)",
+      "steps": [
+        {
+          "text": "An intentional source-vocabulary change is followed by `python3 scripts/generate_codebook.py`; the main guard dispatches main(), which parses --check and calls load_rows().",
+          "sources": [
+            {
+              "path": "README.md",
+              "anchor": "Regenerate the codebook after an intentional source CSV change:"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "if __name__ == \"__main__\":"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "rows, digest = load_rows()"
+            }
+          ]
+        },
+        {
+          "text": "load_rows() resolves the CSV relative to the script repository root, hashes its bytes, and parses UTF-8-with-optional-BOM CSV. Missing source, missing required fields, empty input, blank IDs, and duplicate IDs take explicit error exits.",
+          "sources": [
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "ROOT = Path(__file__).resolve().parents[1]"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "digest = hashlib.sha256(data).hexdigest()"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "reader = csv.DictReader(handle)"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "def fail(message: str) -> None:"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "ids = [row[\"pattern_id\"].strip() for row in rows]"
+            }
+          ]
+        },
+        {
+          "text": "render() builds the manual from loaded rows and their digest, including global evidence defaults and per-pattern sections. Without --check, main() writes UTF-8 CODEBOOK.md and reports completion.",
+          "sources": [
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "def render(rows: list[dict[str, str]], digest: str) -> str:"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "for row in rows:\n        lines.extend("
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "OUTPUT.write_text(rendered, encoding=\"utf-8\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Check codebook consistency (static trace; not executed for this atlas)",
+      "steps": [
+        {
+          "text": "The documented review command is `python3 scripts/generate_codebook.py --check`. It uses the same CSV loading and rendering path before entering the read-only comparison branch.",
+          "sources": [
+            {
+              "path": "CONTRIBUTING.md",
+              "anchor": "1. Run `python3 scripts/generate_codebook.py --check`."
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "rendered = render(rows, digest)\n\n    if args.check:"
+            }
+          ]
+        },
+        {
+          "text": "A missing codebook or exact-text mismatch exits with error status 1; stale output names the regeneration command. Matching output prints the pattern count and returns 0.",
+          "sources": [
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "fail(f\"generated codebook not found: {OUTPUT}\")"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "if OUTPUT.read_text(encoding=\"utf-8\") != rendered:"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "fail(\"CODEBOOK.md is stale; run python3 scripts/generate_codebook.py\")"
+            },
+            {
+              "path": "scripts/generate_codebook.py",
+              "anchor": "print(f\"ok: {len(rows)} patterns; CODEBOOK.md matches {SOURCE.name}\")"
+            }
+          ]
+        },
+        {
+          "text": "Success establishes file consistency. It does not establish annotation agreement or pattern validity. Schema validation, import/export, independent annotation, and adjudication flows have plans but no implemented path to trace in this checkout.",
+          "sources": [
+            {
+              "path": "README.md",
+              "anchor": "These checks establish file consistency. They do not validate the taxonomy."
+            },
+            {
+              "path": "docs/00_control/002_repo_status.md",
+              "anchor": "## Not implemented"
+            },
+            {
+              "path": "docs/50_verification/501_schema_validation_plan.md",
+              "anchor": "The plan defines what future validation must establish."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "text": "Observed code imports are standard-library argparse, csv, hashlib, sys, and pathlib; the generator has no imported external package or hosted service client. The declared minimum local Python version is 3.11.",
+      "sources": [
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "import argparse\nimport csv\nimport hashlib\nimport sys\nfrom pathlib import Path"
+        },
+        {
+          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
+          "anchor": "- Python 3.11 or later for generators, validation, and agreement analysis."
+        }
+      ],
+      "name": "Current Python tooling"
+    },
+    {
+      "text": "SQLite is a planned relational store, not an observed integration. The model proposes normalised CSV or JSONL first for a small pilot and defers PostgreSQL until concurrent access is justified.",
+      "sources": [
+        {
+          "path": "docs/30_design/301_normalised_data_model.md",
+          "anchor": "## Storage choice"
+        },
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "There is no runtime application yet."
+        }
+      ],
+      "name": "Planned storage"
+    },
+    {
+      "text": "jsonschema, pytest, pandas or DuckDB, agreement-statistics packages, and ruff are candidate future dependencies. Their listing is a decision reference, not an installation or evaluation record.",
+      "sources": [
+        {
+          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
+          "anchor": "Add dependencies only when their tests and import path exist:"
+        },
+        {
+          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
+          "anchor": "This is a decision reference, not an installation record."
+        }
+      ],
+      "name": "Candidate packages"
+    },
+    {
+      "text": "INCEpTION, CATMA, ELAN, Advene, VIA, and a locked spreadsheet are annotation-platform candidates. Selection depends on pilot works and unit types; no export/import integration is implemented.",
+      "sources": [
+        {
+          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
+          "anchor": "## Annotation platform candidates"
+        },
+        {
+          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
+          "anchor": "Do not select one until the pilot works and unit types are fixed."
+        },
+        {
+          "path": "docs/00_control/002_repo_status.md",
+          "anchor": "- Annotation-tool integration."
+        }
+      ],
+      "name": "Candidate annotation platforms"
+    },
+    {
+      "text": "Git is documented for source and schema history. No remote publication or hosted integration was checked while building this offline atlas; publication steps in delivery documents are plans rather than observed remote state.",
+      "sources": [
+        {
+          "path": "docs/80_reference/804_tooling_and_corpus_requirements.md",
+          "anchor": "- Git for source and schema history."
+        },
+        {
+          "path": "docs/40_delivery/401_implementation_plan.md",
+          "anchor": "## Phase 0a: Public publication"
+        }
+      ],
+      "name": "Version control and publication boundary"
+    }
+  ],
+  "onboarding": [
+    {
+      "text": "Read REPO_CONTRACT.md, then AGENTS.md and the document register. Resolve competing claims using the contract authority order and preserve its status vocabulary.",
+      "sources": [
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "## Authoritative sources"
+        },
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "## Vocabulary rules"
+        },
+        {
+          "path": "AGENTS.md",
+          "anchor": "- Read `REPO_CONTRACT.md` before acting."
+        },
+        {
+          "path": "docs/00_control/003_document_register.md",
+          "anchor": "# Document Register"
+        }
+      ]
+    },
+    {
+      "text": "Inspect literary_and_video_patterns.csv, then CODEBOOK.md for coding rules, source-workbook mappings, and invented examples. Keep source and generated output separate.",
+      "sources": [
+        {
+          "path": "literary_and_video_patterns.csv",
+          "anchor": "pattern_id,label_type,label,definition,inclusion_criteria,exclusion_criteria,analysis_unit"
+        },
+        {
+          "path": "CODEBOOK.md",
+          "anchor": "> Generated file. Edit `literary_and_video_patterns.csv`"
+        }
+      ]
+    },
+    {
+      "text": "Read scripts/generate_codebook.py in the order main(), load_rows(), render(), then the --check/write branch. This is the current product-tooling path; there is no application server to launch.",
+      "sources": [
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "def main() -> int:"
+        },
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "def load_rows()"
+        },
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "def render(rows: list[dict[str, str]], digest: str) -> str:"
+        },
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "There is no runtime application yet."
+        }
+      ]
+    },
+    {
+      "text": "From the repository root, the declared consistency command is `python3 scripts/generate_codebook.py --check`; omit --check only to regenerate after an intentional source edit. Neither command was executed during atlas creation; behaviour here is based on source inspection.",
+      "sources": [
+        {
+          "path": "README.md",
+          "anchor": "## Verify the source CSV and generated codebook"
+        },
+        {
+          "path": "scripts/generate_codebook.py",
+          "anchor": "if args.check:"
+        }
+      ]
+    },
+    {
+      "text": "For data work, read the data requirements, normalised-model proposal, and annotation workflow. Preserve the original CSV and checksum; do not infer typed relations by blindly splitting legacy cells.",
+      "sources": [
+        {
+          "path": "docs/20_requirements/201_data_requirements.md",
+          "anchor": "## DR-001: Preserve provenance"
+        },
+        {
+          "path": "docs/30_design/301_normalised_data_model.md",
+          "anchor": "## Migration rules"
+        },
+        {
+          "path": "docs/30_design/302_annotation_workflow.md",
+          "anchor": "## 1. Register the work"
+        }
+      ]
+    },
+    {
+      "text": "Before pilot or status work, read PILOT.md, boundary matrices, the schema-validation plan, and CONTRIBUTING.md. Independent coding and adjudication evidence are required for status changes; conformance fixtures and empirical flows remain unimplemented.",
+      "sources": [
+        {
+          "path": "PILOT.md",
+          "anchor": "## Annotator sequence"
+        },
+        {
+          "path": "docs/30_design/303_boundary_matrices.md",
+          "anchor": "## Adjudication caveat"
+        },
+        {
+          "path": "docs/50_verification/501_schema_validation_plan.md",
+          "anchor": "## Behavioural checks"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "anchor": "A move to `pilot_tested` requires:"
+        },
+        {
+          "path": "docs/00_control/002_repo_status.md",
+          "anchor": "## Not implemented"
+        }
+      ]
+    },
+    {
+      "text": "Check the repository status and implementation plan for open work, including owner contact metadata. Treat remote-publication lines as documented plans; this local-only atlas does not verify public visibility.",
+      "sources": [
+        {
+          "path": "docs/00_control/002_repo_status.md",
+          "anchor": "## Required next action"
+        },
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "## Open items"
+        },
+        {
+          "path": "docs/40_delivery/401_implementation_plan.md",
+          "anchor": "## Phase 0a: Public publication"
+        }
+      ]
+    }
+  ]
+}

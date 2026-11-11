@@ -1,0 +1,99 @@
+{
+  "evidence_source_sha256": {
+    ".gitignore": "f8071fe1626a5ae4836dec66808f978cd69a398b675bcc2851484da49fa73a91",
+    "AGENTS.md": "0ba6f5b3002a060d1aabce62676d0d0ddf8c437de1c0c8244643f56d27c68eef",
+    "CODEBOOK.md": "cf3c24b7ae7331f9d89ffb6d8ae7ce80415a056913e51ffc63ef4067cbe26eb5",
+    "CONTRIBUTING.md": "17ccb94c6e56059730a40e31818f3091bbbdb2c720aaa65c3ee662fb34fad368",
+    "PILOT.md": "7d5287a70fd23fbf27595c4cd6984e183a123f010e802cc8e5f66278383e1a8c",
+    "README.md": "8e58323e991365687dc8fe66a809777777d7ed3557dac70229c784e2f0f99e75",
+    "REPO_CONTRACT.md": "254e3966da14942f21731eb723a4d618e3e1221c05b3e155e2056c750a796315",
+    "docs/00_control/002_repo_status.md": "e0c05bc85503bc8a389234111c9184114d2b3abe293d86c46b018b99cada4b38",
+    "docs/00_control/003_document_register.md": "d5d1ea4a0771e71de2dc588e55ce09b76b4feb2263b3dd7889a104a6ab53749a",
+    "docs/10_product/101_product_overview.md": "494b6a5e6f0180a75d972f361a1ae1447e75f7d4e463749a8def144399e020f4",
+    "docs/10_product/103_scope_and_limitations.md": "f3bc94574feb392e409fc8097055726e18bcb686d98a15f385afd25023c7a4ce",
+    "docs/20_requirements/201_data_requirements.md": "846726c1cfc22129cd792a6b017ae7bd5fe4c325371cd8604e238dc7fd728af8",
+    "docs/30_design/301_normalised_data_model.md": "aea68425688c042c60d765c847733df256878631521a9c08fe7e3ff82630758c",
+    "docs/30_design/302_annotation_workflow.md": "f41772f0c7e22fe6729ebb6c421225596c772183714d5c84cf7b1fa197fc31df",
+    "docs/30_design/303_boundary_matrices.md": "dfc14b99dbad23ec5895dafa2d47c4c2367c54fcca0a2bd514858a0b0f44052d",
+    "docs/40_delivery/401_implementation_plan.md": "2eca26484046f32b39db4b84cf831e82cb0cf87610d4077f9c654a4aa07e1da5",
+    "docs/50_verification/501_schema_validation_plan.md": "5605e43d03bbaf73dac6d7b6e08ac5dd0e1604956ee8b29b1ec27c0dd731a1f2",
+    "docs/80_reference/802_design_proposal_provenance.md": "66b5525eceae6939940d234f0bdd935845f9a6336813b1149983cf6432a787be",
+    "docs/80_reference/804_tooling_and_corpus_requirements.md": "2eaf0c87f08d98194ee0f6b6e2d0fee4d7dc9f264308c3161a52ff6cb2cf220f",
+    "literary_and_video_patterns.csv": "8d46dc499e22e4cda82999db0a3bce300396863643499cc3abfb411e36e70560",
+    "scripts/generate_codebook.py": "ba6213face74724a70b852721d2152c578f9b0edd0ca994588dfb4f0be56c130"
+  },
+  "generated_by": "repo_context",
+  "inventory": {
+    "configurations": [],
+    "dependency_declarations": [],
+    "directories": {
+      "docs": {
+        "files": 14,
+        "languages": {}
+      },
+      "docs/00_control": {
+        "files": 2,
+        "languages": {}
+      },
+      "docs/10_product": {
+        "files": 3,
+        "languages": {}
+      },
+      "docs/20_requirements": {
+        "files": 1,
+        "languages": {}
+      },
+      "docs/30_design": {
+        "files": 3,
+        "languages": {}
+      },
+      "docs/40_delivery": {
+        "files": 1,
+        "languages": {}
+      },
+      "docs/50_verification": {
+        "files": 1,
+        "languages": {}
+      },
+      "docs/80_reference": {
+        "files": 3,
+        "languages": {}
+      },
+      "scripts": {
+        "files": 1,
+        "languages": {
+          "Python": 1
+        }
+      }
+    },
+    "entrypoint_candidates": [
+      [
+        "scripts/generate_codebook.py",
+        "Python main guard",
+        "generate_codebook.py",
+        ""
+      ]
+    ],
+    "file_count": 25,
+    "languages": {
+      "Python": 1
+    },
+    "nested_repositories": [],
+    "path_sha256": "625ab27e6f8495b5e950acdc636f15345d1a9709f66ca299e46f7400f6d634f4",
+    "root_files": [
+      ".gitignore",
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CODEBOOK.md",
+      "CONTRIBUTING.md",
+      "LICENSE",
+      "PILOT.md",
+      "README.md",
+      "REPO_CONTRACT.md",
+      "literary_and_video_patterns.csv"
+    ],
+    "stack_signals": [],
+    "unread_or_unparsed": []
+  },
+  "schema": 1
+}
