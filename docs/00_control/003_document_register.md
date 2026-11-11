@@ -31,6 +31,7 @@ related:
 | DOC-304 | `docs/30_design/304_annotation_file_contract.md` | Executable proposed file contract, commands, and boundaries | Controlled | Living |
 | DOC-401 | `docs/40_delivery/401_implementation_plan.md` | Controlled implementation sequence | Controlled | Proposed |
 | DOC-402 | `docs/40_delivery/402_data_pipeline_implementation.md` | Data pipeline implementation decisions and execution plan | Controlled | Living |
+| DOC-403 | `docs/40_delivery/403_remaining_work.md` | Actionable remaining-work checklist with completion evidence | Controlled | Living |
 | DOC-501 | `PILOT.md` | Proposed first validation study | Controlled | Proposed |
 | DOC-502 | `docs/50_verification/501_schema_validation_plan.md` | Planned schema and workflow checks | Controlled | Proposed |
 | DOC-503 | `docs/50_verification/502_data_pipeline_verification.md` | File pipeline conformance evidence and remaining gaps | Evidence | Dated |

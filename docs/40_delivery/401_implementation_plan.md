@@ -20,6 +20,9 @@ related:
 The sequence is designed to establish the coding instrument before investing in
 software or annotation at scale.
 
+Track remaining actions and their completion evidence in
+[the remaining-work checklist](403_remaining_work.md).
+
 ## Phase 0: Control
 
 Status: public distribution and licence choices confirmed; owner metadata

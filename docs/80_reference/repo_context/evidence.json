@@ -675,6 +675,19 @@
           "anchor": "## Open items"
         }
       ]
+    },
+    {
+      "text": "Use the remaining-work checklist for integration, semantic review, contract/pilot preparation, and completion evidence. Conditional SQL, platform, model, and workbook work is identified separately.",
+      "sources": [
+        {
+          "path": "docs/40_delivery/403_remaining_work.md",
+          "anchor": "# Remaining Work"
+        },
+        {
+          "path": "docs/40_delivery/403_remaining_work.md",
+          "anchor": "## Conditional later work"
+        }
+      ]
     }
   ]
 }

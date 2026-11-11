@@ -52,6 +52,7 @@ audiovisual expression, interpreted effects, and related label types.
 | Annotation workflow | [`docs/30_design/302_annotation_workflow.md`](docs/30_design/302_annotation_workflow.md) |
 | Annotation file contract and commands | [`docs/30_design/304_annotation_file_contract.md`](docs/30_design/304_annotation_file_contract.md) |
 | Boundary matrices | [`docs/30_design/303_boundary_matrices.md`](docs/30_design/303_boundary_matrices.md) |
+| Remaining-work checklist | [`docs/40_delivery/403_remaining_work.md`](docs/40_delivery/403_remaining_work.md) |
 | Delivery plan | [`docs/40_delivery/401_implementation_plan.md`](docs/40_delivery/401_implementation_plan.md) |
 | Pilot | [`PILOT.md`](PILOT.md) |
 | Verification plan | [`docs/50_verification/501_schema_validation_plan.md`](docs/50_verification/501_schema_validation_plan.md) |
@@ -96,6 +97,9 @@ reports, supported rules, and extraction review items. The original CSV remains
 authoritative; the derived tables do not resolve ambiguous source semantics.
 
 ## Immediate next work
+
+See the [remaining-work checklist](docs/40_delivery/403_remaining_work.md) for
+sequenced tasks, completion evidence, and conditional follow-up work.
 
 1. Review indicator segmentation, relation typing, mapping rationale, and missing
    per-pattern guidance in `data/normalised/review_items.json`.
