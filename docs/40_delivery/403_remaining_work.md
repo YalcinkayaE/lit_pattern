@@ -49,16 +49,41 @@ this checklist. Keep unresolved cases and decisions visible.
   execution used Python 3.14.5.
 - [ ] Verify a fresh clone preserves the original CSV and retained source copy
   byte-for-byte, including their checksum and Git line-ending attributes.
+- [ ] Add GitHub Actions checks for Python 3.11 and 3.14 before merging. Run the
+  conformance suite, source preservation, generated-data freshness, all positive
+  fixture validations, codebook consistency, and atlas freshness. Record hosted
+  results separately from existing local verification.
 - [ ] Move PR 1 out of draft and merge after review approval. Verify the checks
   on the resulting `main` revision and update branch-specific status references.
 
 ## Complete repository control decisions
 
+- [ ] Clarify the scope of DOC-002: distinguish published `main`, the current
+  implementation branch, and pending PR integration. Date observed Git metadata
+  and refresh it from Git when reporting status rather than treating a recorded
+  commit hash as permanently current.
+- [ ] Keep status authority in the existing contract, DOC-002, and this checklist.
+  Adjust orientation guidance to use them instead of creating a competing dated
+  status-baseline document solely to satisfy a skill's filename convention.
+- [ ] Correct runtime summaries to name both declared dependencies:
+  `jsonschema==4.26.0` and `referencing==0.37.0`, consistent with requirements.txt.
 - [ ] Obtain the owner's intended public contact identity and update unresolved
   owner metadata in controlled documents.
 - [ ] Decide whether reviewed operational data will use normalised CSV, SQLite,
   or both, using actual pilot requirements. Keep the original CSV authoritative
   until an explicit contract change is approved and the replacement is checked.
+
+## Rehearse with real cases before broad semantic review
+
+- [ ] Choose real literary and video cases for existing pilot patterns such as
+  STR05 and STR09. Record editions/releases, locators, and lawful access without
+  changing the formal pilot sample or committing private corpus material.
+- [ ] Record the cases in annotation bundles, run the validator, and have another
+  reader inspect the evidence and decisions. Capture representation problems,
+  ambiguous criteria, and differences in interpretation.
+- [ ] Use the rehearsal findings to prioritise contract changes and semantic
+  review. Keep this rehearsal distinct from the formal pilot and its independent
+  coding rounds; it does not by itself justify a pattern-status change.
 
 ## Resolve the semantic extraction queue
 
@@ -75,6 +100,14 @@ checklist creation, not evidence that the flagged content is wrong.
 | Common false positives | 59 pattern flags | Supply realistic near-misses separately from general exclusion prose |
 | Evidential thresholds | 59 pattern flags | State the located support needed for a coding decision |
 
+- [ ] Add structured review-decision records with a source reference, decision,
+  rationale, reviewer, definition version, and disposition. Preserve accepted,
+  rejected, and unresolved outcomes without changing pattern lifecycle status.
+- [ ] Derive outstanding review items from those records. The current extractor
+  emits flags unconditionally, including relation-typing flags when configured
+  decisions exist. Test that regeneration keeps completed decisions closed,
+  retains unresolved cases, and reopens affected items when their cited source
+  or definition version changes.
 - [ ] Segment indicator cells into reviewed cue records with modality and source
   traceability. Preserve composite or ambiguous cases for explicit resolution.
 - [ ] Review each listed relation. Record accepted typed decisions and rationale
@@ -95,9 +128,9 @@ checklist creation, not evidence that the flagged content is wrong.
 
 ## Review the annotation contract for pilot use
 
-- [ ] Walk real literary and video cases through
-  [the proposed file contract](../30_design/304_annotation_file_contract.md).
-  Record gaps in unit design, locators, evidence roles, or uncertainty handling.
+- [ ] Review [the proposed file contract](../30_design/304_annotation_file_contract.md)
+  against the real-case rehearsal findings. Record gaps in unit design,
+  locators, evidence roles, or uncertainty handling and their disposition.
 - [ ] Assess pattern-specific rule coverage for the pilot sample. The current
   positive rules cover STR05, STR06, STR07, STR09, and STR10; add further rules
   only with an explicit rationale and positive/negative conformance cases.
@@ -106,9 +139,6 @@ checklist creation, not evidence that the flagged content is wrong.
   workflow permits status updates; current checks validate one supplied bundle.
 - [ ] Record schema and definition-version consequences for any changes and
   retain earlier annotations under the versions that produced them.
-- [ ] Add automated repository checks for the supported Python versions,
-  conformance suite, source preservation, generated data, codebook, and atlas.
-  Record hosted results separately from existing local verification.
 
 ## Prepare the pilot
 
