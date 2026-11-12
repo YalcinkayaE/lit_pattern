@@ -710,6 +710,19 @@
           "anchor": "## Conditional later work"
         }
       ]
+    },
+    {
+      "text": "For the proposed skills-based plugin, read DOC-305 for task contracts, versioned library packaging, host capability boundaries and evaluation. The design adds no implemented plugin or runtime entrypoint.",
+      "sources": [
+        {
+          "path": "docs/30_design/305_skills_plugin_design.md",
+          "anchor": "# Skills-Based Plugin Design"
+        },
+        {
+          "path": "docs/30_design/305_skills_plugin_design.md",
+          "anchor": "It adds no runtime entrypoint or pattern-status decision to"
+        }
+      ]
     }
   ]
 }

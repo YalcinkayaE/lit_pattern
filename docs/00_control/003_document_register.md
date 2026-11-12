@@ -4,7 +4,7 @@ title: Document Register
 status: proposed
 owner: unresolved
 created: 2026-11-11
-updated: 2026-11-11
+updated: 2026-11-12
 applies_to: repository
 authority: controlled
 supersedes: null
@@ -29,6 +29,7 @@ related:
 | DOC-302 | `docs/30_design/302_annotation_workflow.md` | Proposed annotation and review workflow | Controlled | Proposed |
 | DOC-303 | `docs/30_design/303_boundary_matrices.md` | Pairwise disambiguation and decision rules | Controlled | Proposed |
 | DOC-304 | `docs/30_design/304_annotation_file_contract.md` | Executable proposed file contract, commands, and boundaries | Controlled | Living |
+| DOC-305 | `docs/30_design/305_skills_plugin_design.md` | Proposed skills-based plugin, library packaging, task contracts and evaluation | Controlled | Proposed |
 | DOC-401 | `docs/40_delivery/401_implementation_plan.md` | Controlled implementation sequence | Controlled | Proposed |
 | DOC-402 | `docs/40_delivery/402_data_pipeline_implementation.md` | Data pipeline implementation decisions and execution plan | Controlled | Living |
 | DOC-403 | `docs/40_delivery/403_remaining_work.md` | Actionable remaining-work checklist with completion evidence | Controlled | Living |

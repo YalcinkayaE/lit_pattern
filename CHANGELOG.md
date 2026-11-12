@@ -8,6 +8,8 @@ editorial changes.
 
 ### Added
 
+- Proposed skills-based plugin design covering library packaging, task skills,
+  evidence handling, host capability boundaries and comparative evaluation.
 - Initial repository contract and documentation set.
 - Confirmed public-release status and the MIT and CC BY 4.0 licence split.
 - Product overview, use cases, and scope limits.

@@ -6,15 +6,16 @@
     "CODEBOOK.md": "cf3c24b7ae7331f9d89ffb6d8ae7ce80415a056913e51ffc63ef4067cbe26eb5",
     "CONTRIBUTING.md": "17ccb94c6e56059730a40e31818f3091bbbdb2c720aaa65c3ee662fb34fad368",
     "PILOT.md": "7d5287a70fd23fbf27595c4cd6984e183a123f010e802cc8e5f66278383e1a8c",
-    "README.md": "a4c0022581fd3caac6ba527260a97295eb83878809fbf8bb8af5669f275acc72",
+    "README.md": "77f942e9557733599e5e3d2139acecf186f2c4486a03acd006260fdd379484db",
     "REPO_CONTRACT.md": "993912a4f183347d5c921580dc79b3c0d30343ddb99b4f822bec2fab47498897",
     "config/pipeline.json": "5a585328f80cf5b09fdf9389dbab3ac07728b18a50e983ac9c887eab366c3a89",
     "docs/00_control/002_repo_status.md": "f3c65a416d1b1764ea891420d1d88036bd80ab634c4fdaa7bd68180952c22cb9",
-    "docs/00_control/003_document_register.md": "e3ac68e80a56d85be7065611c921f74b04daa18cb68e917c134645cbde721a59",
+    "docs/00_control/003_document_register.md": "7accdb2e84934bb1ddbbbdd0eaf071158c41421b3d170a476e17c38de28e8808",
     "docs/10_product/102_use_cases.md": "f2aaa296179d85683e7c2af8c07c3352d4ff25c35e031b0565a9a1aa8c4af423",
     "docs/30_design/301_normalised_data_model.md": "9ff3c111d8b3b40b7f0130c9e6057d5ef2e3adac24dd676609e7eeb2862c903d",
     "docs/30_design/303_boundary_matrices.md": "dfc14b99dbad23ec5895dafa2d47c4c2367c54fcca0a2bd514858a0b0f44052d",
     "docs/30_design/304_annotation_file_contract.md": "8beec22e18eed653710a7d8a9175895e09e281b6278cd3fb20e355ddab1899d9",
+    "docs/30_design/305_skills_plugin_design.md": "0b200a6741b9bb9697dde853a0788c00807c774cbf4609d82b6a344e9f6456a5",
     "docs/40_delivery/403_remaining_work.md": "9b97a1604cc64f6af82451bcb61d0c84757cacfac7ef5688329aedcd14788b5c",
     "docs/50_verification/502_data_pipeline_verification.md": "e983ff50ef6c68bc87c75525d9181b86b38f0f59949fccd1e1bf01f3e505ac0c",
     "docs/50_verification/503_repository_test_plan.md": "af4a7bfb50e7632ef2b233f6fe1a732549197c70618ee7b5104441c0e5c0ee5a",
@@ -64,7 +65,7 @@
         "languages": {}
       },
       "docs": {
-        "files": 19,
+        "files": 20,
         "languages": {}
       },
       "docs/00_control": {
@@ -80,7 +81,7 @@
         "languages": {}
       },
       "docs/30_design": {
-        "files": 4,
+        "files": 5,
         "languages": {}
       },
       "docs/40_delivery": {
@@ -154,12 +155,12 @@
         ""
       ]
     ],
-    "file_count": 58,
+    "file_count": 59,
     "languages": {
       "Python": 7
     },
     "nested_repositories": [],
-    "path_sha256": "0bfc0ec96874ec452d8b9b134effbe3e12b65cfe8d7df35201fecfc02ce692da",
+    "path_sha256": "b020f55864dbc667884be87e44e0955293083232e9f3c18cb95b2e48fa023370",
     "root_files": [
       ".gitattributes",
       ".gitignore",

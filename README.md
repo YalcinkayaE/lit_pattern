@@ -122,6 +122,7 @@ outside the current phase. Detail is in
 | Annotation workflow | [`docs/30_design/302_annotation_workflow.md`](docs/30_design/302_annotation_workflow.md) |
 | Annotation file contract and commands | [`docs/30_design/304_annotation_file_contract.md`](docs/30_design/304_annotation_file_contract.md) |
 | Boundary matrices | [`docs/30_design/303_boundary_matrices.md`](docs/30_design/303_boundary_matrices.md) |
+| Proposed skills-based plugin design | [`docs/30_design/305_skills_plugin_design.md`](docs/30_design/305_skills_plugin_design.md) |
 | Remaining-work checklist | [`docs/40_delivery/403_remaining_work.md`](docs/40_delivery/403_remaining_work.md) |
 | Delivery plan | [`docs/40_delivery/401_implementation_plan.md`](docs/40_delivery/401_implementation_plan.md) |
 | Pilot | [`PILOT.md`](PILOT.md) |
