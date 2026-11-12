@@ -12,8 +12,16 @@
   ],
   "identity": [
     {
-      "text": "lit_pattern holds a proposed literary/audiovisual pattern vocabulary, coding materials, and file-based extraction/annotation validation tools. The original CSV remains authoritative; extracted candidates and a schema-conformant record do not establish empirical validity.",
+      "text": "literary-audiovisual-patterns holds a proposed literary/audiovisual pattern vocabulary, coding materials, and file-based extraction/annotation validation tools. The original CSV remains authoritative; extracted candidates and a schema-conformant record do not establish empirical validity. The Python package remains lit_pattern.",
       "sources": [
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "Repository name: `literary-audiovisual-patterns`"
+        },
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "The Python package remains `lit_pattern`."
+        },
         {
           "path": "REPO_CONTRACT.md",
           "anchor": "Current status: file-based command-line tooling and proposed coding materials."

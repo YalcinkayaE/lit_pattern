@@ -4,7 +4,7 @@ title: Repository Status
 status: proposed
 owner: unresolved
 created: 2026-11-11
-updated: 2026-11-11
+updated: 2026-11-12
 applies_to: repository
 authority: controlled
 supersedes: null
@@ -40,6 +40,12 @@ not evidence that the proposed functionality exists.
   `a6bc51c4d6cdf61f6fc488164e8bc4d43e64b2cb350e3b149ed21653fb8c2f7d`.
 - Four source fields are identical across all 59 rows: `evidence_required`,
   `annotation_rule`, `sequence_recording`, and `interpretation_boundary`.
+
+## Observed on 2026-11-12
+
+- GitHub repository renamed from `YalcinkayaE/lit_pattern` to
+  [YalcinkayaE/literary-audiovisual-patterns](https://github.com/YalcinkayaE/literary-audiovisual-patterns).
+  The previous URL redirects. The Python package name remains `lit_pattern`.
 
 ## Implemented
 

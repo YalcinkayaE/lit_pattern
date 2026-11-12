@@ -42,6 +42,9 @@ still needs a supplied value before the control phase is fully complete.
 Status: published on 2026-11-11.
 
 - Public repository: [YalcinkayaE/lit_pattern](https://github.com/YalcinkayaE/lit_pattern).
+- Renamed on 2026-11-12 to
+  [YalcinkayaE/literary-audiovisual-patterns](https://github.com/YalcinkayaE/literary-audiovisual-patterns).
+  The previous URL redirects.
 - `origin` is configured and local `main` tracks `origin/main`.
 - Initial history and documentation update `e7dc049` were pushed.
 - GitHub API reports public visibility and default branch `main`.
