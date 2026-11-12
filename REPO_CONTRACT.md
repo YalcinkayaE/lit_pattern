@@ -4,7 +4,7 @@ title: Repository Contract
 status: proposed
 owner: unresolved
 created: 2026-11-11
-updated: 2026-11-11
+updated: 2026-11-12
 applies_to: repository
 authority: authoritative
 supersedes: null
@@ -17,7 +17,7 @@ related:
 
 ## Identity
 
-Repository name: `lit_pattern`
+Repository name: `literary-audiovisual-patterns`
 
 Purpose: maintain a proposed, evidence-oriented pattern database and coding
 manual for literary and audiovisual analysis, together with the governance,

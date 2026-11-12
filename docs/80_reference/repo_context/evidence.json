@@ -12,8 +12,12 @@
   ],
   "identity": [
     {
-      "text": "lit_pattern is a documentation-first repository for a proposed literary and audiovisual pattern vocabulary and coding manual; there is no runtime application yet.",
+      "text": "literary-audiovisual-patterns is a documentation-first repository for a proposed literary and audiovisual pattern vocabulary and coding manual; there is no runtime application yet.",
       "sources": [
+        {
+          "path": "REPO_CONTRACT.md",
+          "anchor": "Repository name: `literary-audiovisual-patterns`"
+        },
         {
           "path": "REPO_CONTRACT.md",
           "anchor": "Purpose: maintain a proposed, evidence-oriented pattern database and coding"
